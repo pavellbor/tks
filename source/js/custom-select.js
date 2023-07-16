@@ -97,12 +97,19 @@
     const instance = object;
     const { select, className } = instance;
     return new Promise((resolve) => {
-      requestIdleCallback(() => {
+      if ("requestIdleCallback" in window) {
+        requestIdleCallback(() => {
+          insertBase(select, className);
+          instance.node = select.nextElementSibling;
+          hideSelect(instance);
+          resolve(instance);
+        });
+      } else {
         insertBase(select, className);
         instance.node = select.nextElementSibling;
         hideSelect(instance);
         resolve(instance);
-      });
+      }
     });
   };
 
