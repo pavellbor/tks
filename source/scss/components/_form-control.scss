@@ -1,0 +1,45 @@
+.form-control {
+  display: flex;
+  width: 100%;
+  padding: 9px 11px;
+  background: none;
+  border: 1px solid $color-border-control;
+  border-radius: $radius-md;
+  transition: $transition-duration;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 11px;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (hover: hover) {
+    &:not(:disabled):hover {
+      border-color: $color-primary;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    border-color: $color-primary;
+    box-shadow: 0px 0px 0px 2px rgba(0, 107, 197, 0.2);
+  }
+
+  &::placeholder {
+    color: $color-placeholder;
+  }
+
+  &:disabled {
+    background: $color-bg-disabled;
+
+    &::placeholder {
+      color: $color-disabled;
+    }
+  }
+}

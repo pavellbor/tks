@@ -1,0 +1,37 @@
+{
+  "name": "tks",
+  "version": "1.0.0",
+  "description": "Верстка для сайта tks.ru",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pavel Borisov",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.22.9",
+    "@babel/preset-env": "^7.22.9",
+    "autoprefixer": "^10.4.14",
+    "browser-sync": "^2.29.3",
+    "delete": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.1.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-libsquoosh": "^1.1.2",
+    "gulp-postcss": "^9.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-stacksvg": "^2.0.2",
+    "gulp-svgmin": "^4.1.0",
+    "gulp-terser": "^2.1.0",
+    "postcss": "^8.4.25",
+    "postcss-csso": "^6.0.1",
+    "sass": "^1.63.6"
+  }
+}

@@ -1,0 +1,11 @@
+.form-label {
+  display: block;
+  // width: 100%;
+  margin-bottom: 8px;
+  font-weight: bold;
+  line-height: 115%;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}

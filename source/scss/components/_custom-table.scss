@@ -1,0 +1,98 @@
+.custom-table {
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+
+  tbody {
+    display: contents;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
+
+.custom-table__row {
+  &--horizontal {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.custom-table__row:not(.as-desktop) + .custom-table__row {
+  margin-top: 12px;
+  border-top: 1px solid $color-divider;
+}
+
+.custom-table__col {
+  display: flex;
+  flex-direction: column;
+  padding: 7px 0;
+  line-height: normal;
+}
+
+.custom-table__heading {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.custom-table__data {
+  &--bold {
+    font-weight: bold;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .custom-table {
+    display: table;
+  }
+
+  .custom-table tbody {
+    display: table-row-group;
+  }
+
+  .custom-table__row {
+    display: table-row;
+  }
+
+  .custom-table__heading {
+    text-align: left;
+  }
+
+  .custom-table__col {
+    display: table-cell;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .custom-table--payments {
+    line-height: 115%;
+
+    .custom-table__heading:nth-child(1),
+    .custom-table__col:nth-child(1) {
+      width: 258px;
+      padding-right: 20px;
+    }
+
+    .custom-table__heading:nth-child(2),
+    .custom-table__col:nth-child(2) {
+      width: 305px;
+      padding-right: 20px;
+    }
+
+    .custom-table__heading:nth-child(3),
+    .custom-table__col:nth-child(3) {
+      text-align: right;
+    }
+
+    .custom-table__heading {
+      padding-bottom: 10px;
+    }
+
+    .custom-table__col {
+      padding: 14px 0;
+      vertical-align: top;
+    }
+  }
+}

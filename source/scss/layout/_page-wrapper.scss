@@ -1,0 +1,13 @@
+.page-wrapper {
+  padding-left: $offset-x-mobile;
+  padding-right: $offset-x-mobile;
+  background-color: $color-bg-main;
+  overflow-x: hidden;
+
+  @media (min-width: $desktop-width) {
+    max-width: 1010px;
+    margin: 0 auto;
+    padding-left: $offset-x-desktop;
+    padding-right: $offset-x-desktop;
+  }
+}

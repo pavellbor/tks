@@ -1,0 +1,44 @@
+.article {
+  position: relative;
+  margin-bottom: 34px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -$offset-x-mobile;
+    right: -$offset-x-mobile;
+    height: 5px;
+    background-color: $color-divider;
+
+    @media (min-width: $desktop-width) {
+      left: 0;
+      right: 0;
+    }
+  }
+
+  p {
+    margin: 12px 0;
+
+    @media (min-width: $desktop-width) {
+      margin: 17px 0;
+    }
+  }
+
+  i {
+    line-height: 115%;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  section + section {
+    margin-top: 0;
+  }
+}
+
+.article__title {
+  margin-top: 0;
+}

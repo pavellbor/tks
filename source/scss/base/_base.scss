@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a:not([class]) {
+  color: $color-primary;
+  text-decoration: none;
+}
+
+body {
+  font-family: $font-main;
+  font-size: 14px;
+  line-height: 143%;
+  color: $color;
+  background-color: $color-bg-main-secondary;
+}
+
+h1, h2 {
+  margin: 20px 0;
+  font-size: 20px;
+  line-height: 115%;
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  line-height: 140%;
+
+  @media (min-width: $desktop-width) {
+    margin: 10px 0 15px;
+  }
+}
+
+table:not([class]) {
+  border-collapse: collapse;
+  line-height: normal;
+
+  td {
+    padding-bottom: 15px;
+    vertical-align: baseline;
+    
+    @media (min-width: $desktop-width) {
+      padding-bottom: 17px;
+      padding-right: 18px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: fit-content;
+  }
+}

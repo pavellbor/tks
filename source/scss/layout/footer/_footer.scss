@@ -1,0 +1,22 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  a:not([class]) {
+    text-decoration: underline;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 705px;
+    padding-top: 30px;
+  }
+}
+
+.footer__row {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}

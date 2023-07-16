@@ -1,0 +1,22 @@
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0;
+  padding: 0 $offset-x-mobile;
+  list-style: none;
+  
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+
+.nav__item {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.nav__link {
+  color: inherit;
+  text-decoration: none;
+}

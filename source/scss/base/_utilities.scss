@@ -1,0 +1,54 @@
+.text-nowrap {
+  white-space: nowrap !important;
+}
+
+.outer-mobile {
+  @media (max-width: $desktop-width) {
+    margin-left: -$offset-x-mobile;
+    margin-right: -$offset-x-mobile;
+  }
+}
+
+.swiper {
+  @media (max-width: $desktop-width) {
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    max-width: 100vw;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    > * {
+      flex-shrink: 0;
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.as-mobile {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.as-desktop {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+}

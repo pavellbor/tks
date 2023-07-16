@@ -1,0 +1,13 @@
+.footer-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-links__item {
+  padding: 15px 0;
+
+  &:not(:first-child) {
+    border-top: 1px solid $color-divider;
+  }
+}

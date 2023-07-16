@@ -1,0 +1,21 @@
+.footer-nav__list {
+  @extend .nav__list;
+
+  gap: 8px;
+  padding: 0;
+}
+
+.footer-nav__item {
+  @extend .nav__item;
+}
+
+.footer-nav__link {
+  @extend .nav__link;
+
+  padding: 5px 9px;
+  font-size: 14px;
+  line-height: normal;
+  color: $color-primary;
+  border-radius: $radius-sm;
+  border: 1px solid $color-primary;
+}

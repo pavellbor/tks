@@ -1,0 +1,35 @@
+.article-breadcrumb {
+  padding-top: 23px;
+  padding-bottom: 7px;
+  
+  @media (min-width: $desktop-width) {
+    padding-bottom: 8px;
+  }
+}
+
+.article-breadcrumb__list {
+  display: flex;
+  gap: 7px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.article-breadcrumb__item {
+  font-size: 13px;
+  color: $color-primary;
+
+  @media (min-width: $desktop-width) {
+    font-size: 12px;
+  }
+
+  a {
+    color: rgba(0, 0, 0, 0.45);
+    text-decoration: none;
+  }
+
+  &:not(:last-child)::after {
+    content: "/";
+    color: rgba(0, 0, 0, 0.45);
+  }
+}

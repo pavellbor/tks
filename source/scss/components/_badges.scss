@@ -1,0 +1,33 @@
+.badges__list {
+  display: flex;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (max-width: $desktop-width) {
+    &.swiper {
+      padding-left: $offset-x-mobile;
+      padding-right: $offset-x-mobile;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-wrap: wrap;
+  }
+}
+
+.badges__item {
+  @media (min-width: $desktop-width) {
+    flex-shrink: 0;
+  }
+}
+
+.badges__item-btn {
+  @extend .btn;
+  @extend .btn--rounded;
+
+  &--active {
+    @extend .btn--primary;
+  }
+}

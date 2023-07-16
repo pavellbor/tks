@@ -1,0 +1,14 @@
+.footer-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 225px auto;
+  }
+}
+
+.footer-contacts__col {
+  display: grid;
+}

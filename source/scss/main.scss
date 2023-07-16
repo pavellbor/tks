@@ -1,0 +1,35 @@
+@import "./base/normalize";
+@import "./base/vars";
+@import "./base/fonts";
+@import "./base/base";
+@import "./base/utilities";
+
+@import "./components/nav";
+@import "./components/advertisement";
+@import "./components/additional-nav";
+@import "./components/badges";
+@import "./components/btn";
+@import "./components/custom-table";
+@import "./components/form";
+@import "./components/form-check";
+@import "./components/form-label";
+@import "./components/form-select";
+@import "./components/form-control";
+@import "./components/logo";
+@import "./components/search";
+
+@import "./layout/page-wrapper";
+@import "./layout/page-main";
+@import "./layout/header/header";
+@import "./layout/header/header-navbar";
+@import "./layout/header/header-main-nav";
+@import "./layout/header/header-secondary-nav";
+@import "./layout/article/article";
+@import "./layout/article/article-breadcrumb";
+@import "./layout/footer/footer.scss";
+@import "./layout/footer/footer-navbar.scss";
+@import "./layout/footer/footer-nav.scss";
+@import "./layout/footer/footer-links.scss";
+@import "./layout/footer/footer-contacts.scss";
+@import "./layout/footer/footer-additional.scss";
+@import "./layout/footer/footer-info.scss";

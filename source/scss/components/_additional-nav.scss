@@ -1,0 +1,67 @@
+.additional-nav {
+  margin-bottom: 10px;
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 10px 10px 0;
+    margin-bottom: 0;
+  }
+}
+
+.additional-nav__list {
+  @extend .nav__list;
+  gap: 0 !important;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 170px 1fr 1fr 1fr;
+  }
+}
+
+.additional-nav__item {
+  @extend .nav__item;
+  padding: 0 7px;
+}
+
+.additional-nav__item:first-child {
+  padding-left: 0;
+}
+
+.additional-nav__item:last-child {
+  padding-right: 0;
+}
+
+.additional-nav__item:not(:last-child) {
+  border-right: 1px solid $color-divider;
+}
+
+.additional-nav__link {
+  @extend .nav__link;
+
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: $color-primary;
+
+  &::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+  }
+
+  &--cars-customs-clearance::before {
+    background-image: url("/img/icons/cars-customs-clearance.webp");
+  }
+
+  &--payments-calculation::before {
+    background-image: url("/img/icons/payments-calculation.webp");
+  }
+
+  &--database::before {
+    background-image: url("/img/icons/database.webp");
+  }
+
+  &--customs-forum::before {
+    background-image: url("/img/icons/customs-forum.webp");
+  }
+}

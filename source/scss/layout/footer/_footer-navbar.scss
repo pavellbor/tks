@@ -1,0 +1,16 @@
+.footer-navbar__row {
+  display: flex;
+  gap: 15px;
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
+}
+
+.footer-navbar__logo {
+  flex-shrink: 0;
+}
+
+.footer-navbar__nav {
+  flex-wrap: wrap;
+}
