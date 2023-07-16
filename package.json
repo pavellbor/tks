@@ -33,5 +33,8 @@
     "postcss": "^8.4.25",
     "postcss-csso": "^6.0.1",
     "sass": "^1.63.6"
+  },
+  "engines": {
+    "node": "16.20.1"
   }
 }
