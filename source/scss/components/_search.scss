@@ -62,6 +62,10 @@
     padding: 15px 0 15px 10px;
     border: none;
     background: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .search__clear {
