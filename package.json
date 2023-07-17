@@ -19,6 +19,7 @@
     "delete": "^1.1.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
+    "gulp-changed": "^4.0.3",
     "gulp-concat": "^2.6.1",
     "gulp-dart-sass": "^1.1.0",
     "gulp-file-include": "^2.3.0",
@@ -30,6 +31,8 @@
     "gulp-stacksvg": "^2.0.2",
     "gulp-svgmin": "^4.1.0",
     "gulp-terser": "^2.1.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttftowoff2": "^1.0.1",
     "postcss": "^8.4.25",
     "postcss-csso": "^6.0.1",
     "sass": "^1.63.6"

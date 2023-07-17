@@ -16,6 +16,35 @@ import include from "gulp-file-include";
 import sourcemaps from "gulp-sourcemaps";
 import babel from "gulp-babel";
 import concat from "gulp-concat";
+import ttf2woff2 from "gulp-ttftowoff2";
+import ttf2woff from "gulp-ttf2woff";
+import changed from "gulp-changed";
+
+const fonts = (done) => {
+  gulp
+    .src("source/fonts/**/*.ttf")
+    .pipe(
+      changed("build/fonts", {
+        extension: ".woff2",
+        hasChanged: changed.compareLastModifiedTime,
+      })
+    )
+    .pipe(ttf2woff2())
+    .pipe(gulp.dest("build/fonts"));
+
+  gulp
+    .src("source/fonts/**/*.ttf")
+    .pipe(
+      changed("build/fonts", {
+        extension: "woff",
+        hasChanged: changed.compareLastModifiedTime,
+      })
+    )
+    .pipe(ttf2woff())
+    .pipe(gulp.dest("build/fonts"));
+
+  done();
+};
 
 const styles = () => {
   return gulp
@@ -92,10 +121,11 @@ const reload = (done) => {
 const watch = () => {
   gulp.watch(["source/img/**/*.svg", "!source/img/svg/icon/*.svg"], svg);
   gulp.watch("source/img/svg/icons/*.svg", stack);
+  gulp.watch("source/fonts/**/*.ttf", fonts);
   gulp.watch("./source/img/**/*.{jpeg,jpg,png}", images);
   gulp.watch("./source/scss/**/*.scss", styles);
   gulp.watch("./source/js/**/*.js", scripts);
-  gulp.watch("./source/*.html", gulp.series(html, reload));
+  gulp.watch("./source/**/*.html", gulp.series(html, reload));
 };
 
 export const build = gulp.series(
@@ -105,7 +135,7 @@ export const build = gulp.series(
 
 export default gulp.series(
   clean,
-  gulp.parallel(scripts, styles, html, images, svg, stack),
+  gulp.parallel(scripts, styles, html, images, svg, stack, fonts),
   server,
   watch
 );
