@@ -9,7 +9,7 @@ img {
   height: auto;
 }
 
-a:not([class]) {
+a {
   color: $color-primary;
   text-decoration: none;
 }

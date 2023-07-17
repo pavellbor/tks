@@ -55,11 +55,8 @@
   }
 
   &:disabled {
+    color: $color-disabled;
     background: $color-bg-disabled;
-
-    &::placeholder {
-      color: $color-disabled;
-    }
   }
 
   @media (min-width: $desktop-width) {

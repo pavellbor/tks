@@ -130,7 +130,7 @@ const watch = () => {
 
 export const build = gulp.series(
   clean,
-  gulp.parallel(scripts, styles, html, images, svg, stack)
+  gulp.parallel(scripts, styles, html, images, svg, stack, fonts)
 );
 
 export default gulp.series(

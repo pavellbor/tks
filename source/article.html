@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include('./partials/_head.html')
+</head>
+
+<body>
+  <div class="page-wrapper">
+    @@include('./partials/_header.html')
+
+    <main class="page-main">
+      <div class="advertisement"></div>
+
+      <nav class="additional-nav outer-mobile">
+        <ul class="additional-nav__list swiper">
+          <li class="additional-nav__item">
+            <a class="additional-nav__link additional-nav__link--cars-customs-clearance" href="#">Растаможка авто</a>
+          </li>
+          <li class="additional-nav__item">
+            <a class="additional-nav__link additional-nav__link--payments-calculation" href="#">Расчет платежей</a>
+          </li>
+          <li class="additional-nav__item">
+            <a class="additional-nav__link additional-nav__link--database" href="#">База данных</a>
+          </li>
+          <li class="additional-nav__item">
+            <a class="additional-nav__link additional-nav__link--customs-forum" href="#">Таможенный форум</a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="article">
+        <header class="article__header article-header">
+          <nav class="article-header__breadcrumb article-breadcrumb">
+            <ol class="article-breadcrumb__list">
+              <li class="article-breadcrumb__item">
+                <a href="#">Главная страница</a>
+              </li>
+              <li class="article-breadcrumb__item article-breadcrumb__item--active">
+                Новости таможни
+              </li>
+            </ol>
+          </nav>
+          <div class="article-header__intro">
+            <div class="article-header__intro-body">
+              <h1 class="article-header__title">В Карелии заявили, что более 40% внешнеторгового оборота республики приходится на Китай
+              </h1>
+              <div class="article-header__info">
+                <time class="article-header__date" datetime="2023-06-28">28 июня 2023</time>
+                <a class="article-header__print-version" href="#">Версия для печати</a>
+              </div>
+            </div>
+            <img class="article-header__image" src="/img/article-demo.webp" width="345" height="194" />
+          </div>
+        </header>
+        <div class="article__content">
+          <p>
+            Доля внешнеторгового оборота Карелии, которая приходится на Китай, превысила 40% после переориентации экспорта продукции карельских предприятий на новые рынки сбыта.
+          </p>
+          <p>
+            Об этом в среду рассказал руководитель региона Артур Парфенчиков на встрече с генеральным консулом Китайской Народной Республики в Санкт-Петербурге Ван Вэньли.
+          </p>
+          <p>
+            Результатом расчета являются суммы платежей, рассчитанные по Единым ставкам, утвержденным <a href="#">Таблицей
+              2 Приложения 2 к Решению Совета ЕЭК от 20.12.2017 N 107 "Об отдельных вопросах,
+              связанных с товарами для личного пользования" и Единым таможенным тарифом</a> (ЕТТ) Евразийского
+            экономического союза, утвержденным <a href="#">Решением Совета Евразийской экономической комиссии от
+              14.09.2021 года N 80</a>.
+          </p>
+          <article class="article-embed">
+            <h2 class="article-embed__title">Заказать бланки</h2>
+            <div class="article-embed__body">
+              <a href="#">Бланки CMR, ТН (транспортных накладных), ТТН (товарно-транспортных накладных)</a>
+            </div>
+          </article>
+        </div>
+      </article>
+
+      <div class="advertisement"></div>
+    </main>
+
+    @@include('./partials/_footer.html')
+  </div>
+
+  @@include('./partials/_scripts.html')
+</body>
+
+</html>

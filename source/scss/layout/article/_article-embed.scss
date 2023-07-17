@@ -1,0 +1,22 @@
+.article-embed {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 12px 0;
+  padding: 15px;
+  gap: 10px;
+  border-radius: $radius-md;
+  border: 1px solid rgba(0, 107, 197, 0.1);
+  box-shadow: 0px 4px 8px 0px rgba(0, 107, 197, 0.12);
+  
+  @media (min-width: $desktop-width) {
+    margin: 20px 0;
+  }
+}
+
+.article-embed__title {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 140%;
+}

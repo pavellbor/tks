@@ -1,0 +1,52 @@
+.article-header {
+  padding-top: 23px;
+}
+
+.article-header__breadcrumb {
+  margin-bottom: 7px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 8px;
+  }
+}
+
+.article-header__intro {
+  display: grid;
+  gap: 12px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+  }
+}
+
+.article-header__intro-body {
+  display: grid;
+  gap: 8px;
+}
+
+.article-header__info {
+  display: flex;
+  gap: 15px;
+  font-size: 12px;
+  line-height: 115%;
+}
+
+.article-header__date {
+  color: $color-placeholder;
+}
+
+.article-header__title {
+  margin: 0;
+}
+
+.article-header__image {
+  width: 100%;
+  border-radius: $radius-md;
+
+  @media (min-width: $desktop-width) {
+    order: -1;
+    width: 230px;
+  }
+}
