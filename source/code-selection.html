@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include('./partials/_head.html')
+</head>
+
+<body>
+  <div class="page-wrapper">
+    @@include('./partials/_header.html')
+
+    <main class="page-main page-main--fluid">
+      <article class="custom-article">
+        <header class="custom-article__header">
+          <h1 class="custom-article__title"><span class="as-desktop">"</span>API Примеры товаров<span class="as-desktop">"</span> (<span class="as-desktop">"</span>Подбор по наименованию<span class="as-desktop">"</span>)<span class="as-desktop">.</span></h1>
+          <p class="custom-article__desc">База наименований товаров, основана на более чем 1 млн. записей о товарах, прошедших таможенное оформление. Позволяет быстро определить код товара исходя из наименования товара, которое указывается в декларации.</p>
+        </header>
+
+        <div class="custom-article__row">
+          <form class="custom-article__search page-search">
+            <input class="page-search__input" type="text" placeholder="Введите код товара" />
+            <button class="page-search__submit">Поиск</button>
+          </form>
+          <div class="custom-article__alert alert alert--info alert--copy" role="alert">
+            Нажмите на код товара и скопируйте его в буфер обмена
+          </div>
+        </div>
+
+        <table class="code-selection-table">
+          @@for (var i = 0; i < 4; i++) {
+            <tr>
+              <td data-clipboard>0802 12 900 0</td>
+              <td>ПРОЧИЙ МИНДАЛЬ БЕЗ СКОРЛУПЫ, ЗА ИСКЛЮЧЕНИЕМ ГОРЬКОГО</td>
+              <td>30,27</td>
+            </tr>
+            <tr>
+              <td data-clipboard>2008 19 930 0</td>
+              <td>ПРОЧИЕ МИНДАЛЬ И ФИСТАШКИ ОБЖАРЕННЫЕ, В ПЕРВИЧНЫХ УПАКОВКАХ НЕТТО- МАССОЙ НЕ БОЛЕЕ 1 КГ</td>
+              <td>14,09</td>
+            </tr>
+            <tr>
+              <td data-clipboard>1704 90 510 0</td>
+              <td>ПАСТЫ И МАССЫ, ВКЛЮЧАЯ МАРЦИПАН, В ПЕРВИЧНЫХ УПАКОВКАХ НЕТТО- МАССОЙ 1 КГ ИЛИ БОЛЕЕ, НЕ СОДЕРЖАЩИЙ КАКАО</td>
+              <td>10,27</td>
+            </tr>
+            <tr>
+              <td data-clipboard>2008 19 130 0</td>
+              <td>ОБЖАРЕННЫЕ МИНДАЛЬ И ФИСТАШКИ, В ПЕРВИЧНЫХ УПАКОВКАХ НЕТТО- МАССОЙ БОЛЕЕ 1 КГ</td>
+              <td>9,18</td>
+            </tr>
+            <tr>
+              <td data-clipboard>1806 90 190 0</td>
+              <td>ПРОЧИЕ ШОКОЛАДНЫЕ КОНФЕТЫ, С НАЧИНКОЙ ИЛИ БЕЗ НАЧИНКИ</td>
+              <td>4,82</td>
+            </tr>
+            <tr>
+              <td data-clipboard>1106 30 900 0</td>
+              <td>ПРОЧИЕ МУКА ТОНКОГО И ГРУБОГО ПОМОЛА И ПОРОШОК ИЗ ПРОДУКТОВ ГРУППЫ 08</td>
+              <td>4,50</td>
+            </tr>
+            <tr>
+              <td data-clipboard>1806 32 100 0</td>
+              <td>ПРОЧИЕ ГОТОВЫЕ ПИЩЕВЫЕ ПРОДУКТЫ, СОДЕРЖАЩИЕ КАКАО, БЕЗ НАЧИНКИ, НО С ДОБАВКОЙ ЗЕРНА ХЛЕБНЫХ ЗНАКОВ, ПЛОДОВ (ФРУКТОВ) ИЛИ ОРЕХОВ И НАХОДЯЩИЕСЯ В БРИКЕТАХ, ПЛАСТИНАХ ИЛИ ПЛИТКАХ</td>
+              <td>3,59</td>
+            </tr>
+          }
+        </table>
+
+      </article>
+    </main>
+
+    @@include('./partials/_footer.html')
+  </div>
+
+  @@include('./partials/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+.code-selection-table {
+  border-collapse: collapse;
+
+  td {
+    vertical-align: top;
+
+    &:first-child,
+    &:last-child {
+      white-space: nowrap;
+      font-weight: bold;
+      color: $color-primary-dark;
+    }
+
+    &:first-child {
+      position: relative;
+      cursor: pointer;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+
+    @media (max-width: $desktop-width) {
+      padding: 10px;
+
+      &:first-child,
+      &:last-child {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 10px 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    border-collapse: separate;
+    border-spacing: 10px 0;
+    border-radius: $radius-md;
+    border: 1px solid $color-border-control;
+    background-color: $color-bg-main;
+  }
+}

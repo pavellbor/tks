@@ -1,0 +1,54 @@
+.tooltip {
+  position: relative;
+  z-index: 1;
+  bottom: -11px;
+  animation: fadeIn $transition-duration;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 0;
+    right: 0;
+    z-index: 11;
+    display: block;
+    width: 0;
+    height: 0;
+    margin: 0 auto;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 12px solid $color-bg-main;
+    filter: drop-shadow(0px 8px 16px rgba(0, 0, 0, 0.25));
+    clip-path: polygon(-100% -100%, 200% -100%, 200% 100%, -100% 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.tooltip__body {
+  position: absolute;
+  z-index: 10;
+  width: 150px;
+  padding: 8px;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  white-space: normal;
+  color: $color;
+  border-radius: $radius-md;
+  background-color: $color-bg-main;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

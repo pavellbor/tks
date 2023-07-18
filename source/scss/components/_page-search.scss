@@ -1,0 +1,35 @@
+
+.page-search {
+  display: flex;
+  gap: 8px;
+}
+
+.page-search__input {
+  @extend .form-control;
+
+  margin: 0 !important;
+}
+
+.page-search__submit {
+  @extend .btn;
+  @extend .btn--primary;
+
+  flex-shrink: 0;
+  background-color: $color-primary-dark;
+  border-radius: $radius-md;
+
+  @media (max-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
+    font-size: 0;
+    background-image: url("../img/stack.svg#search-secondary");
+    background-position: center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

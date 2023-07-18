@@ -6,6 +6,7 @@
   border: 1px solid $color-border-control;
   border-radius: $radius-md;
   transition: $transition-duration;
+  background-color: $color-bg-main;
 
   &:not(:last-child) {
     margin-bottom: 12px;

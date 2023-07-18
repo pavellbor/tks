@@ -17,6 +17,10 @@
 @import "./components/form-control";
 @import "./components/logo";
 @import "./components/search";
+@import "./components/page-search";
+@import "./components/alert";
+@import "./components/code-selection-table";
+@import "./components/tooltip";
 
 @import "./layout/page-wrapper";
 @import "./layout/page-main";
@@ -35,3 +39,4 @@
 @import "./layout/footer/footer-contacts.scss";
 @import "./layout/footer/footer-additional.scss";
 @import "./layout/footer/footer-info.scss";
+@import "./layout/custom-article/custom-article";

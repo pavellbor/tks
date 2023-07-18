@@ -9,6 +9,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-areas: "search search" "logo nav";
+    grid-template-columns: auto 1fr;
     column-gap: 30px;
   }
 }
