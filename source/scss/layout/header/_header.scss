@@ -1,7 +1,29 @@
 .header {
+  position: sticky;
+  z-index: 111;
+  background-color: $color-bg-main;
+  transition: $transition-duration;
+
+  &--stickied {
+    box-shadow: 0px 3px 6px 0px rgba(48, 48, 48, 0.12);
+  }
+
   @media (max-width: $desktop-width) {
-    padding-top: 15px;
-    padding-bottom: 7px;
+    top: -1px;
+    margin-bottom: 7px;
+    margin-left: -$offset-x-mobile;
+    margin-right: -$offset-x-mobile;
+    padding-top: 16px;
+    padding-left: $offset-x-mobile;
+    padding-right: $offset-x-mobile;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -67px;
+    margin-bottom: 10px;
+    margin-left: -$offset-x-desktop;
+    margin-right: -$offset-x-desktop;
+    padding-left: $offset-x-desktop;
+    padding-right: $offset-x-desktop;
   }
 }
-
