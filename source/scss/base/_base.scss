@@ -12,6 +12,10 @@ img {
 a {
   color: $color-primary;
   text-decoration: none;
+
+  &:not([class]):hover {
+    font-weight: 500;
+  }
 }
 
 button {
