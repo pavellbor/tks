@@ -1,0 +1,71 @@
+.tree-list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  [class$='--expanded'] > & {
+    display: block;
+  }
+}
+
+.tree-list__title {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+  gap: 14px;
+  padding: 10px 15px;
+
+  .tree-list__item--expanded > &::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: $color-expanded;
+  }
+
+  &:not(:has(.tree-list__code))::before {
+    content: '';
+    position: relative;
+    z-index: 1;
+    align-self: center;
+    width: 22px;
+    height: 22px;
+    background-image: url('../img/stack.svg#folder');
+
+    .tree-list__item--expanded > & {
+      background-image: url('../img/stack.svg#folder-opened');
+    }
+  }
+}
+
+.tree-list__code {
+  position: relative;
+  z-index: 1;
+  padding: 4px 10px;
+  border-radius: $radius-sm;
+  font-weight: bold;
+
+  .tree-list & {
+    background: #b5d9ff;
+  }
+
+  .tree-list .tree-list & {
+    background: #cfe9e6;
+  }
+
+  .tree-list .tree-list .tree-list & {
+    background: #b6ecaa;
+  }
+
+  .tree-list__item:not(:has(.tree-list)) > .tree-list__title > & {
+    background: #fadfd1;
+  }
+}
+
+.tree-list__section {
+  position: relative;
+  z-index: 1;
+}

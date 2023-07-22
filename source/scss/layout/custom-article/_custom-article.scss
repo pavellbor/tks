@@ -40,6 +40,20 @@
   }
 }
 
+.custom-article__search-row {
+  margin-bottom: 15px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
+    margin-bottom: 13px;
+    padding: 7px 0;
+
+    .custom-article__search {
+      width: 310px;
+    }
+  }
+}
+
 .custom-article__search {
   @media (max-width: $desktop-width) {
     margin: 7px 0;
