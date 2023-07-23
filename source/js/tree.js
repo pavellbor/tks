@@ -119,5 +119,7 @@
   const root = document.querySelector('[data-tree-list]')
   let currentItem = null
 
-  constructor(root)
+  if (root) {
+    constructor(root)
+  }
 }

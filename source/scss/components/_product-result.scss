@@ -1,0 +1,36 @@
+.product-result {
+}
+
+.product-result__table {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid $color-border-control;
+  border-radius: $radius-md;
+
+  td,
+  th {
+    text-align: left;
+    padding: 10px 0;
+
+    &:not(:last-child) {
+      padding-right: 9px;
+    }
+
+    &:first-child {
+      font-weight: bold;
+      padding-left: 17px;
+    }
+
+    &:last-child {
+      padding-right: 17px;
+      text-align: right;
+    }
+  }
+
+  tr:not(:last-child) {
+    td,
+    th {
+      border-bottom: 1px solid $color-border-control;
+    }
+  }
+}

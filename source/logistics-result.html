@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include('./partials/_head.html')
+</head>
+
+<body>
+  <div class="page-wrapper">
+    @@include('./partials/_header.html')
+
+    <main class="page-main page-main--fluid">
+      <article class="custom-article">
+        <header class="custom-article__header">
+          <h1 class="custom-article__title"><span class="as-desktop">"</span>Логистика<span class="as-desktop">"</span><span class="as-desktop">.</span></h1>
+          <p class="custom-article__desc">Используется только совместно с модулем <b>"Расчет таможенных платежей"</b>. Позволяет сформировать на вашем сайте готовое коммерческое предложение для клиента. Кроме таможенных платежей, клиент получает точную сумму доставки, страхования, перевода, услуг брокера и других расходы. Включается возможность подбора наименования города по базе городов мира. Все параметры и наименования расходов настраиваются в Личном кабинете. Возможна отправка результатов на электронную почту в формате pdf. Эта страница представляет собой пример для обработки информации по импорту товаров из Китая.</p>
+        </header>
+
+        <div class="logistics">
+          <div class="logistics__alert alert alert--error" role="alert">
+            Не найдены настройки расчета. Загрузите в личном кабинете.
+          </div>
+
+          <form class="logistics-form">
+            <div class="logistics-form__row">
+              <div class="logistics-form__col logistics-form__col--transportation-type">
+                <label for="transportation-type" class="form-label">Тип перевозки</label>
+                <select id="transportation-type" data-custom-select-class="form-select">
+                  <option value="0">авиа перевозка</option>
+                  <option value="1" selected>авиа перевозка</option>
+                  <option value="2" disabled>авиа перевозка</option>
+                  <option value="3">авиа перевозка</option>
+                </select>
+              </div>
+              <div class="logistics-form__col logistics-form__col--calculation-type">
+                <label for="calculation-type" class="form-label">Тип расчета</label>
+                <select id="calculation-type" data-custom-select-class="form-select">
+                  <option value="0">Экспорт</option>
+                  <option value="1" selected>Экспорт</option>
+                  <option value="2" disabled>Экспорт</option>
+                  <option value="3">Экспорт</option>
+                </select>
+              </div>
+              <div class="logistics-form__col logistics-form__col--origin-country">
+                <label for="origin-country" class="form-label">Страна происхождения</label>
+                <select id="origin-country" data-custom-select-class="form-select">
+                  <option value="0">Алжир</option>
+                  <option value="1" selected>Алжир</option>
+                  <option value="2" disabled>Алжир</option>
+                  <option value="3">Алжир</option>
+                </select>
+              </div>
+            </div>
+            <div class="logistics-form__row">
+              <div class="logistics-form__col logistics-form__col--product-code">
+                <label for="product-code" class="form-label">Код товара</label>
+                <div class="form-validation">
+                  <input id="product-code" class="form-control" placeholder="" value="0101300000" />
+                  <span class="form-error">Введите код товара</span>
+                </div>
+              </div>
+              <div class="logistics-form__col logistics-form__col--btns">
+                <button class="logistics-form__submit btn btn--primary btn--lg">Выбрать товар</button>
+                <button class="logistics-form__submit btn btn--primary btn--lg">Найти по наименованию</button>
+              </div>
+            </div>
+            <div class="logistics-form__row">
+              <div class="logistics-form__col logistics-form__col--settlement-currency">
+                <label for="settlement-currency" class="form-label">Валюта расчета</label>
+                <select id="settlement-currency" data-custom-select-class="form-select">
+                  <option value="0">Швейцарский франк</option>
+                  <option value="1" selected>Швейцарский франк</option>
+                  <option value="2" disabled>Швейцарский франк</option>
+                  <option value="3">Швейцарский франк</option>
+                </select>
+              </div>
+              <div class="logistics-form__col logistics-form__col--goods-cost">
+                <label for="goods-cost" class="form-label">Стоимость товара</label>
+                <input id="goods-cost" class="form-control" placeholder="" value="3000" />
+              </div>
+            </div>
+          </form>
+  
+          <div class="logistics-result">
+            <div class="logistics-result__product-info product-info">
+              <p class="product-info__desc">Ослы, живые</p>
+              <div class="product-info__section">
+                <span class="product-info__section-title">Импорт:</span>
+                <table class="product-info__table">
+                  <tr>
+                    <td>Пошлина:</td>
+                    <td>15%</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>НДС:</td>
+                    <td>10 % (с указанием преф. "ЛП")</td>
+                    <td><button class="btn btn--more"></button></td>
+                  </tr>
+                  <tr>
+                    <td>Преф. режим для РС:</td>
+                    <td>Есть</td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+  
+            <div class="logistics-result__product-result product-result">
+              <table class="product-result__table">
+                <tr>
+                  <th></th>
+                  <th>Основа</th>
+                  <th>Ставка</th>
+                  <th>Сумма</th>
+                </tr>
+                <tr>
+                  <td>Сборы:</td>
+                  <td>30000 RUB</td>
+                  <td>775 RUB</td>
+                  <td>775 RUB</td>
+                </tr>
+                <tr>
+                  <td>Пошлина:</td>
+                  <td>30000 RUB</td>
+                  <td>5 %</td>
+                  <td>1500 RUB</td>
+                </tr>
+                <tr>
+                  <td>НДС:</td>
+                  <td>31500 RUB</td>
+                  <td>10 %</td>
+                  <td>3150 RUB</td>
+                </tr>
+              </table>
+            </div>
+  
+            <div class="logistics-result__product-result product-result">
+              <table class="product-result__table">
+                <tr>
+                  <td>Итого:</td>
+                  <td></td>
+                  <td></td>
+                  <td>5425 RUB</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </article>
+    </main>
+
+    @@include('./partials/_footer.html')
+  </div>
+
+  @@include('./partials/_scripts.html')
+</body>
+
+</html>

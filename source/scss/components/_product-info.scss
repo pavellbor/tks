@@ -11,6 +11,10 @@
   text-transform: uppercase;
   padding: 15px;
   border-bottom: 1px solid $color-border-control;
+
+  @media (max-width: $desktop-width) {
+    padding: 10px 15px;
+  }
 }
 
 .product-info__section + .product-info__section  {
@@ -23,15 +27,19 @@
   padding: 10px 15px;
   font-weight: bold;
   font-size: 18px;
+  line-height: 143%;
   color: $color-primary-dark;
 }
 
 .product-info__table {
-  width: 100%;
-  border-collapse: collapse;
+  display: grid;
 
+  tr {
+    display: flex;
+    align-items: center;
+  }
+  
   td {
-    vertical-align: center;
     padding: 10px 0;
 
     &:not(:last-child) {
@@ -44,10 +52,12 @@
     }
     
     &:nth-child(2) {
+      flex-grow: 1;
       text-align: right;
     }
     
     &:nth-child(3) {
+      flex-shrink: 0;
       width: 40px;
       padding-right: 15px;
 

@@ -1,0 +1,14 @@
+.logistics-result {
+  display: grid;
+  gap: 14px;
+}
+
+.logistics-result__product-info {
+  position: static;
+
+  @media (min-width: $desktop-width) {
+    .product-info__desc {
+      padding: 10px 17px;
+    }
+  }
+}

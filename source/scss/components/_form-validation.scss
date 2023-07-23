@@ -1,0 +1,25 @@
+.form-validation {
+  display: grid;
+  position: relative;
+  margin-bottom: 12px;
+
+  .form-error {
+    display: none;
+  }
+
+  .form-control {
+    margin-bottom: 0;
+  }
+}
+
+.form-validation--error {
+  .form-control {
+    margin-bottom: 0;
+    border-color: $color-error;
+  }
+
+  .form-error {
+    display: block;
+    margin: 2px 0;
+  }
+}

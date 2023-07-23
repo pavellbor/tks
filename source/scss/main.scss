@@ -15,6 +15,8 @@
 @import "./components/form-label";
 @import "./components/form-select";
 @import "./components/form-control";
+@import "./components/form-validation";
+@import "./components/form-error";
 @import "./components/logo";
 @import "./components/search";
 @import "./components/page-search";
@@ -24,8 +26,13 @@
 @import "./components/product-list";
 @import "./components/tree-list";
 @import "./components/product-info";
+@import "./components/product-result";
 @import "./components/modal";
 @import "./components/modal-product";
+@import "./components/logistics-form";
+@import "./components/logistics-result";
+@import "./components/logistics";
+
 
 @import "./layout/page-wrapper";
 @import "./layout/page-main";
