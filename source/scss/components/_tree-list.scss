@@ -4,7 +4,8 @@
   padding: 0;
   list-style: none;
 
-  [class$='--expanded'] > & {
+  .tree-list__item--expanded > &,
+  .product-list__item--expanded > & {
     display: block;
   }
 }
@@ -26,31 +27,35 @@
     background-color: $color-expanded;
   }
 
-  .tree-list__item--expanded:not(:has(.tree-list)) > &::after {
+  .tree-list__item--expanded.tree-list__item--finit > &::after {
     background-color: $color-primary-dark;
   }
 
-  &:not(:has(.tree-list__code))::before {
+  .tree-list__item--folder > &::before {
     content: '';
     position: relative;
     z-index: 1;
     align-self: center;
     width: 22px;
     height: 22px;
-    background-image: url('../img/stack.svg#folder');
-
-    .tree-list__item--expanded > & {
-      background-image: url('../img/stack.svg#folder-opened');
-    }
+    background: url('../img/stack.svg#folder') no-repeat;
+  }
+  
+  .tree-list__item--expanded.tree-list__item--folder > &::before {
+    background: url('../img/stack.svg#folder-opened') no-repeat;
   }
 }
 
-.tree-list__code {
+.tree-list__code,
+.tree-list__code[x-apple-data-detectors] {
   position: relative;
   z-index: 1;
+  display: inline-flex;
+  flex-shrink: 0;
   padding: 4px 10px;
   border-radius: $radius-sm;
   font-weight: bold;
+  color: $color !important;
 
   .tree-list & {
     background: #b5d9ff;
@@ -64,8 +69,8 @@
     background: #b6ecaa;
   }
 
-  .tree-list__item:not(:has(.tree-list)) > .tree-list__title > & {
-    background: #fadfd1;
+  .tree-list__item--finit > .tree-list__title > & {
+    background: #fadfd1 !important;
   }
 }
 
@@ -75,7 +80,7 @@
   margin-top: auto;
   margin-bottom: auto;
 
-  .tree-list__item--expanded:not(:has(.tree-list)) & {
+  .tree-list__item--expanded.tree-list__item--finit & {
     color: $color-bg-main;
   }
 }
