@@ -32,11 +32,25 @@
 .custom-article__row {
   display: grid;
 
+  @media (max-width: $desktop-width) {
+    &--tn-ved {
+      .custom-article__alert {
+        display: none;
+      }
+    }
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 30px;
     margin-bottom: 30px;
     padding: 7px 0;
+
+    &--tn-ved {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      align-items: start;
+    }
   }
 }
 

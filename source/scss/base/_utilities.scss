@@ -43,12 +43,12 @@
 
 .as-mobile {
   @media (min-width: $desktop-width) {
-    display: none;
+    display: none !important;
   }
 }
 
 .as-desktop {
   @media (max-width: $desktop-width) {
-    display: none;
+    display: none !important;
   }
 }

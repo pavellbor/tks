@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include('./partials/_head.html')
+</head>
+
+<body>
+  <div class="page-wrapper">
+    @@include('./partials/_header.html')
+
+    <main class="page-main page-main--fluid">
+      <article class="custom-article">
+        <header class="custom-article__header">
+          <h1 class="custom-article__title"><span class="as-desktop">"</span>API ТНВЭД<span class="as-desktop">"</span><span class="as-desktop">.</span></h1>
+          <p class="custom-article__desc">Полная информация по всем кодам ТН ВЭД ЕАЭС. Справка по коду содержит сведения обо всех ставках/признаках, мерах тарифного и нетарифного регулирования, запретах и ограничениях. Доступно более 30 информационных позиций по каждому коду. Может использоваться для расчетов или получения актуальной информации о товаре.</p>
+        </header>
+
+        <div class="custom-article__search-row">
+          <form class="custom-article__search page-search">
+            <input class="page-search__input" type="text" placeholder="Введите код товара" />
+            <button class="page-search__submit">Поиск</button>
+          </form>
+        </div>
+
+        <div class="custom-article__row custom-article__row--tn-ved">
+          <ul class="product-list outer-mobile" data-tree-list>
+            <li class="product-list__item product-list__item--expanded">
+              <div class="product-list__title">
+                <div class="product-list__chapter">Раздел I</div>
+                <div class="product-list__section">ЖИВЫЕ ЖИВОТНЫЕ; ПРОДУКТЫ ЖИВОТНОГО ПРОИСХОЖДЕНИЯ</div>
+              </div>
+              <ul class="tree-list">
+                <li class="tree-list__item">
+                  <div class="tree-list__title">
+                    <div class="tree-list__code">01</div>
+                    <div class="tree-list__section">ЖИВЫЕ ЖИВОТНЫЕ</div>
+                  </div>
+                </li>
+                <li class="tree-list__item">
+                  <div class="tree-list__title">
+                    <div class="tree-list__code">02</div>
+                    <div class="tree-list__section">МЯСО И ПИЩЕВЫЕ МЯСНЫЕ СУБПРОДУКТЫ</div>
+                  </div>
+                </li>
+                <li class="tree-list__item">
+                  <div class="tree-list__title">
+                    <div class="tree-list__code">03</div>
+                    <div class="tree-list__section">РЫБА И РАКООБРАЗНЫЕ, МОЛЛЮСКИ И ПРОЧИЕ ВОДНЫЕ БЕСПОЗВОНОЧНЫЕ</div>
+                  </div>
+                </li>
+                <li class="tree-list__item tree-list__item--expanded">
+                  <div class="tree-list__title">
+                    <div class="tree-list__code">04</div>
+                    <div class="tree-list__section">МОЛОЧНАЯ ПРОДУКЦИЯ; ЯЙЦА ПТИЦ; МЕД НАТУРАЛЬНЫЙ; ПИЩЕВЫЕ ПРОДУКТЫ ЖИВОТНОГО ПРОИСХОЖДЕНИЯ, В ДРУГОМ МЕСТЕ НЕ ПОИМЕНОВАННЫЕ ИЛИ НЕ ВКЛЮЧЕННЫЕ</div>
+                  </div>
+                  <ul class="tree-list">
+                    <li class="tree-list__item tree-list__item--expanded">
+                      <div class="tree-list__title">
+                        <div class="tree-list__code">0401</div>
+                        <div class="tree-list__section">Молоко и сливки, несгущенные и без добавления сахара или других подслащивающих веществ:</div>
+                      </div>
+                      <ul class="tree-list">
+                        <li class="tree-list__item">
+                          <div class="tree-list__title">
+                            <div class="tree-list__code">040110</div>
+                            <div class="tree-list__section">- с содержанием жира не более 1 мас.%:</div>
+                          </div>
+                        </li>
+                        <li class="tree-list__item">
+                          <div class="tree-list__title">
+                            <div class="tree-list__code">040120</div>
+                            <div class="tree-list__section">- с содержанием жира более 1 мас.%, но не более 6 мас.%:</div>
+                          </div>
+                        </li>
+                        <li class="tree-list__item">
+                          <div class="tree-list__title">
+                            <div class="tree-list__code">040140</div>
+                            <div class="tree-list__section">- с содержанием жира более 6 мас.%, но не более 10 мас.%:</div>
+                          </div>
+                        </li>
+                        <li class="tree-list__item tree-list__item--expanded">
+                          <div class="tree-list__title">
+                            <div class="tree-list__code">040150</div>
+                            <div class="tree-list__section">- с содержанием жира более 10 мас.%:</div>
+                          </div>
+                          <ul class="tree-list">
+                            <li class="tree-list__item tree-list__item--expanded">
+                              <div class="tree-list__title">
+                                <div class="tree-list__section">-- не более 21 мас.%:</div>
+                              </div>
+                              <ul class="tree-list">
+                                <li class="tree-list__item tree-list__item--expanded">
+                                  <div class="tree-list__title">
+                                    <div class="tree-list__code">0401501100</div>
+                                    <div class="tree-list__section">--- в первичных упаковках нетто-объемом не более 2 л</div>
+                                  </div>
+                                </li>
+                                <li class="tree-list__item">
+                                  <div class="tree-list__title">
+                                    <div class="tree-list__code">0401501900</div>
+                                    <div class="tree-list__section">--- прочие</div>
+                                  </div>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="tree-list__item">
+                              <div class="tree-list__title">
+                                <div class="tree-list__section">-- более 21 мас.%, но не более 45 мас.%:</div>
+                              </div>
+                            </li>
+                            <li class="tree-list__item">
+                              <div class="tree-list__title">
+                                <div class="tree-list__section">-- более 45 мас.%:</div>
+                              </div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="tree-list__item">
+                      <div class="tree-list__title">
+                        <div class="tree-list__code">0402</div>
+                        <div class="tree-list__section">Молоко и сливки, сгущенные или с добавлением сахара или других подслащивающих веществ:</div>
+                      </div>
+                    </li>
+                    <li class="tree-list__item">
+                      <div class="tree-list__title">
+                        <div class="tree-list__code">0403</div>
+                        <div class="tree-list__section">Йогурт; пахта, свернувшиеся молоко и сливки, кефир и прочие ферментированные или сквашенные молоко и сливки, сгущенные или несгущенные, с добавлением или без добавления сахара или других подслащивающих веществ, со вкусо-ароматическими добавками или без них, с добавлением или без добавления фруктов, орехов или какао:</div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="product-list__item">
+              <div class="product-list__title">
+                <div class="product-list__chapter">Раздел II</div>
+                <div class="product-list__section">ПРОДУКТЫ РАСТИТЕЛЬНОГО ПРОИСХОЖДЕНИЯ</div>
+                <ul class="tree-list">
+                  <li class="tree-list__item">
+                    <div class="tree-list__title">
+                      <div class="tree-list__code">01</div>
+                      <div class="tree-list__section">ЖИВЫЕ ЖИВОТНЫЕ</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="product-list__item">
+              <div class="product-list__title">
+                <div class="product-list__chapter">Раздел Iii</div>
+                <div class="product-list__section">ЖИРЫ И МАСЛА ЖИВОТНОГО, РАСТИТЕЛЬНОГО ИЛИ МИКРОБИОЛОГИЧЕСКОГО ПРОИСХОЖДЕНИЯ И ПРОДУКТЫ ИХ РАСЩЕПЛЕНИЯ; ГОТОВЫЕ ПИЩЕВЫЕ ЖИРЫ; ВОСКИ ЖИВОТНОГО ИЛИ РАСТИТЕЛЬНОГО ПРОИСХОЖДЕНИЯ</div>
+              </div>
+            </li>
+            <li class="product-list__item">
+              <div class="product-list__title">
+                <div class="product-list__chapter">Раздел IV</div>
+                <div class="product-list__section">ГОТОВЫЕ ПИЩЕВЫЕ ПРОДУКТЫ; АЛКОГОЛЬНЫЕ И БЕЗАЛКОГОЛЬНЫЕ НАПИТКИ И УКСУС; ТАБАК И ПРОМЫШЛЕННЫЕ ЗАМЕНИТЕЛИ ТАБАКА; ПРОДУКЦИЯ, СОДЕРЖАЩАЯ ИЛИ НЕ СОДЕРЖАЩАЯ НИКОТИН, ПРЕДНАЗНАЧЕННАЯ ДЛЯ ВДЫХАНИЯ БЕЗ ГОРЕНИЯ; ПРОЧАЯ ПРОДУКЦИЯ, СОДЕРЖАЩАЯ НИКОТИН И ПРЕДНАЗНАЧЕННАЯ ДЛЯ ПОСТУПЛЕНИЯ НИКОТИНА В ОРГАНИЗМ ЧЕЛОВЕКА</div>
+              </div>
+            </li>
+            <li class="product-list__item">
+              <div class="product-list__title">
+                <div class="product-list__chapter">Раздел v</div>
+                <div class="product-list__section">МИНЕРАЛЬНЫЕ ПРОДУКТЫ</div>
+              </div>
+            </li>
+          </ul>
+          <section class="product-info as-desktop">
+            <p class="product-info__desc">МОЛОКО И СЛИВКИ, НЕСГУЩЕННЫЕ И БЕЗ ДОБАВЛЕНИЯ САХАРА ИЛИ ДРУГИХ ПОДСЛАЩИВАЮЩИХ ВЕЩЕСТВ, С СОДЕРЖАНИЕМ ЖИРА БОЛЕЕ 10 МАС.%, НО НЕ БОЛЕЕ 21%, В ПЕРВИЧНЫХ УПАКОВКАХ НЕТТО-ОБЪЕМОМ НЕ БОЛЕЕ 2 Л</p>
+            <div class="product-info__section">
+              <span class="product-info__section-title">Импорт:</span>
+              <table class="product-info__table">
+                <tr>
+                  <td>Пошлина:</td>
+                  <td>15%</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>НДС:</td>
+                  <td>10 % (с указанием преф. "ЛП")</td>
+                  <td><button class="btn btn--more" data-modal-trigger="0401501100"></button></td>
+                </tr>
+                <tr>
+                  <td>Пошлина по стране:</td>
+                  <td>Есть</td>
+                  <td><button class="btn btn--more"></button></td>
+                </tr>
+                <tr>
+                  <td>Маркировка:</td>
+                  <td>Нет</td>
+                  <td><button class="btn btn--more"></button></td>
+                </tr>
+                <tr>
+                  <td>Преф. режим для РС:</td>
+                  <td>Есть</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>Сертификация:</td>
+                  <td>Нет</td>
+                  <td><button class="btn btn--more"></button></td>
+                </tr>
+                <tr>
+                  <td>Разрешительные прочие:</td>
+                  <td></td>
+                  <td><button class="btn btn--more"></button></td>
+                </tr>
+                <tr>
+                  <td>Прочие особенности:</td>
+                  <td></td>
+                  <td><button class="btn btn--more"></button></td>
+                </tr>
+              </table>
+            </div>
+            <div class="product-info__section">
+              <span class="product-info__section-title">Экспорт:</span>
+              <table class="product-info__table">
+                <tr>
+                  <td>Разрешительные прочие:</td>
+                  <td></td>
+                  <td><button class="btn btn--more"></button></td>
+                </tr>
+              </table>
+            </div>
+          </section>
+        </div>
+
+      </article>
+      <section class="modal" tabindex="-1" data-modal="0401501100">
+        <div class="modal__dialog">
+          <div class="modal__content">
+            <div class="modal__header">
+              <h5 class="modal__title">НДС</h5>
+              <button class="modal__close" data-modal-close></button>
+            </div>
+            <div class="modal__body">
+              <div class="modal-product">
+                <div class="modal-product__info">
+                  <div class="modal-product__number">0401501100</div>
+                  <div class="modal-product__name">МОЛОКО И СЛИВКИ, НЕСГУЩЕННЫЕ И БЕЗ ДОБАВЛЕНИЯ САХАРА ИЛИ ДРУГИХ ПОДСЛАЩИВАЮЩИХ ВЕЩЕСТВ, С СОДЕРЖАНИЕМ ЖИРА БОЛЕЕ 10 МАС.%, НО НЕ БОЛЕЕ 21%, В ПЕРВИЧНЫХ УПАКОВКАХ НЕТТО-ОБЪЕМОМ НЕ БОЛЕЕ 2 Л</div>
+                </div>
+                <ul class="modal-product__list">
+                  <li class="modal-product__item">
+                    <span class="modal-product__item-title">10 % (с указанием преф. "ЛП") - (БАЗОВАЯ)</span>
+                  </li>
+                  <li class="modal-product__item">
+                    <span class="modal-product__item-title">10 % (с указанием преф. "ЛП")</span>
+                    <p class="modal-product__item-desc">Молоко, сливки, пахта, кефир, сливочное масло, молочные жиры, сыр и творог и прочие молочные продукты, предназначенные для использования в пищевых целях и кормовых целях (в том числе предназначенный для проведения сертификационных испытаний, проверок, экспериментов)</p>
+                  </li>
+                  <li class="modal-product__item">
+                    <span class="modal-product__item-title">20 %</span>
+                    <p class="modal-product__item-desc">Молоко, сливки, пахта, кефир, сливочное масло, молочные жиры, сыр и творог и прочие молочные продукты, предназначенные не в пищевых целей.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    @@include('./partials/_footer.html')
+  </div>
+
+  @@include('./partials/_scripts.html')
+</body>
+
+</html>

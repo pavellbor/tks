@@ -1,11 +1,12 @@
 {
   const constructor = (search) => {
     const lockBody = () => {
-      document.body.style.position = 'fixed'
+      
+      document.body.style.overflowY = 'hidden'
     }
 
     const unlockBody = () => {
-      document.body.style.position = 'static'
+      document.body.removeAttribute('style')
     }
 
     const showPopup = () => {
