@@ -28,6 +28,15 @@
     innerList.style.paddingLeft = `${innerListOffsetLeft}px`
   }
 
+  const removeInnerListLeftPadding = (el) => {
+    const innerList = el.querySelector(TREE_SELECTOR)
+    if (!innerList) {
+      return
+    }
+
+    innerList.removeAttribute('style')
+  }
+
   const toggleTreeItem = (el) => {
     if (isFinitItem(el)) {
       currentItem?.classList?.remove(TREE_ITEM_ACTIVE_CLASS)
@@ -45,26 +54,44 @@
     el.classList.toggle(PRODUCT_ITEM_ACTIVE_CLASS)
   }
 
+  const onRootClick = (e) => {
+    e.preventDefault()
+
+    const treeItem = e.target.closest(TREE_ITEM_SELECTOR)
+    if (treeItem) {
+      toggleTreeItem(treeItem)
+      return
+    }
+
+    const productItem = e.target.closest(PRODUCT_ITEM_SELECTOR)
+    if (productItem) {
+      toggleProductItem(productItem)
+    }
+  }
+
+  const onMatchMediaChange = (e) => {
+    isDesktop = e.matches
+
+    if (isDesktop) {
+      setAllExpandedListLeftPadding(root)
+    } else {
+      removeAllExpandedListLeftPadding(root)
+    }
+  }
+
   const initEvents = (root) => {
-    root.addEventListener('click', (e) => {
-      e.preventDefault()
-
-      const treeItem = e.target.closest(TREE_ITEM_SELECTOR)
-      if (treeItem) {
-        toggleTreeItem(treeItem)
-        return
-      }
-
-      const productItem = e.target.closest(PRODUCT_ITEM_SELECTOR)
-      if (productItem) {
-        toggleProductItem(productItem)
-      }
-    })
+    root.addEventListener('click', onRootClick)
+    desktopMatchMedia.addEventListener('change', onMatchMediaChange)
   }
 
   const setAllExpandedListLeftPadding = (root) => {
     const allExpandedList = root.querySelectorAll(`.${TREE_ITEM_ACTIVE_CLASS}`)
     allExpandedList.forEach(setInnerListLeftPadding)
+  }
+
+  const removeAllExpandedListLeftPadding = (root) => {
+    const allExpandedList = root.querySelectorAll(`.${TREE_ITEM_ACTIVE_CLASS}`)
+    allExpandedList.forEach(removeInnerListLeftPadding)
   }
 
   const isFinitItem = (el) => {
@@ -85,9 +112,10 @@
     }
   }
 
-  const isDesktop = window.matchMedia(
+  const desktopMatchMedia = window.matchMedia(
     `(min-width: ${DESKTOP_WIDTH_IN_PX}px)`
-  ).matches
+  )
+  let isDesktop = desktopMatchMedia.matches
   const root = document.querySelector('[data-tree-list]')
   let currentItem = null
 
