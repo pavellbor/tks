@@ -1,242 +1,97 @@
 .periodicals {
-    position: relative;
-    padding-bottom: 28px;
+  position: relative;
+  padding-bottom: 28px;
 
-    @media (min-width: $desktop-width) {
-        display: flex;
-        align-items: flex-start;
-        padding-bottom: 34px;
-    }
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 34px;
+  }
 }
 
 .periodicals-main-content__wrapper {
-    @media (min-width: $desktop-width) {
-        flex-shrink: 0;
-        width: 455px;
-        margin-right: 25px;
-    }
+  @media (min-width: $desktop-width) {
+    flex-shrink: 0;
+    width: 455px;
+    margin-right: 25px;
+  }
 }
 
 .periodicals__header {
-    margin-bottom: 20px;
-    padding-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .periodicals-header__title {
-    margin: 0;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    color: #333333;
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #333333;
 }
 
 .periodicals__main-content {
-    color: #444444;
+  color: #444444;
 }
 
 .periodicals-main-content__list {
-    margin: 0 0 15px 0;
-    padding: 0;
-    list-style: none;
-    border-bottom: 1px solid #d0dce8;
+  margin: 0 0 15px 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid #d0dce8;
 }
 
 .periodicals-main-content__item {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 
 .periodicals-main-content__item:last-child {
-    @media (min-width: $desktop-width) {
-        display: none;
-    }
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .periodicals-main-content__item-header {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
 
-    @media (min-width: $desktop-width) {
-        display: block;
-    }
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
 }
 
 .periodicals-main-content__item-title {
-    margin: 0;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 19.98px;
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19.98px;
 }
 
 .periodicals-main-content__item-image {
-    box-sizing: content-box;
-    flex-shrink: 0;
-    height: 73px;
-    width: 130px;
-    padding: 5px 0 0 15px;
-    object-fit: cover;
+  box-sizing: content-box;
+  flex-shrink: 0;
+  height: 73px;
+  width: 130px;
+  padding: 5px 0 0 15px;
+  object-fit: cover;
 
-    @media (min-width: $desktop-width) {
-        float: right;
-        margin-bottom: 36px;
-    }
+  @media (min-width: $desktop-width) {
+    float: right;
+    margin-bottom: 36px;
+  }
 }
 
 .periodicals-main-content__item-intro {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19.6px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.6px;
 }
 
-.periodicals__hot-content {
-    color: #444444;
-
-    @media (min-width: $desktop-width) {
-        flex-shrink: 0;
-        width: 225px;
-        margin-right: 20px;
-        padding-top: 15px;
-    }
+.periodicals__aside {
+  @media (min-width: $desktop-width) {
+    width: 225px;
+    padding-top: 15px;
+  }
 }
-
-.periodicals-hot-content__title {
-    margin: 0;
-    padding: 5px 0 15px 0;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    color: #333333;
-
-    @media (min-width: $desktop-width) {
-        font-size: 17px;
-    }
-}
-
-.periodicals-hot-content__list {
-    margin: 0 0 10px 0;
-    padding: 0;
-    list-style: none;
-    color: #000000;
-}
-
-.periodicals-hot-content__item {
-    padding: 9px 0 14px 0;
-    border-bottom: 1px solid #d0dce8;
-}
-
-.periodicals-hot-content__item:first-child {
-    @media (min-width: $desktop-width) {
-        padding: 0 0 14px 0;
-    }
-}
-
-.periodicals-hot-content__item--active {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
-
-    @media (min-width: $desktop-width) {
-        flex-direction: column;
-        padding: 15px 0;
-    }
-}
-
-.periodicals-hot-content__item-title {
-    margin: 0;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19.6px;
-}
-
-.periodicals-hot-content__item-image {
-    box-sizing: content-box;
-    flex-shrink: 0;
-    height: 73px;
-    width: 130px;
-    padding: 0 0 0 15px;
-    object-fit: cover;
-
-    @media (min-width: $desktop-width) {
-        width: 225px;
-        height: 177px;
-        padding-left: 0;
-    }
-}
-
-
-.periodicals-hot-content__item--active .periodicals-hot-content__item-title {
-    font-weight: 700;
-
-    @media (min-width: $desktop-width) {
-        margin-bottom: 6px;
-    }
-}
-
-.periodicals-hot-content__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 28px;
-    margin-bottom: 30px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 19.6px;
-    color: #337ab7;
-    border: 1px solid #337ab7;
-    border-radius: 5px;
-
-    @media (min-width: $desktop-width) {
-        display: none;
-    }
-}
-
-// .periodicals__author-content {
-//     padding: 15px 15px 17px 15px;
-//     color: #000000;
-//     background-color: #e7e7e7;
-
-//     @media (min-width: $desktop-width) {
-//         flex-shrink: 0;
-//         width: 240px;
-//         margin-top: 20px;
-//     }
-// }
-
-// .periodicals-author-content__title {
-//     margin: 0 0 15px 0;
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 19.6px;
-// }
-
-// .periodicals-author-content__list {
-//     margin: 0;
-//     padding: 0;
-//     list-style: none;
-// }
-
-// .periodicals-author-content__item {
-//     display: flex;
-//     justify-content: space-between;
-//     margin-bottom: 7px;
-// }
-
-// .periodicals-author-content__item-title {
-//     margin: 0 0 5px 0;
-//     font-weight: 400;
-//     font-size: 14px;
-//     line-height: 19.6px;
-// }
-
-// .periodicals-author-content__item-image {
-//     width: 60px;
-//     height: 80px;
-// }
-
-// .periodicals-author-content__item-copyright {
-//     font-size: 12px;
-//     line-height: 16.8px;
-//     color: #989898;
-// }
