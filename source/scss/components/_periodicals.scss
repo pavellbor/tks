@@ -9,84 +9,12 @@
   }
 }
 
-.periodicals-main-content__wrapper {
+.periodicals__main {
   @media (min-width: $desktop-width) {
     flex-shrink: 0;
     width: 455px;
     margin-right: 25px;
   }
-}
-
-.periodicals__header {
-  margin-bottom: 20px;
-  padding-top: 20px;
-}
-
-.periodicals-header__title {
-  margin: 0;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 23px;
-  color: #333333;
-}
-
-.periodicals__main-content {
-  color: #444444;
-}
-
-.periodicals-main-content__list {
-  margin: 0 0 15px 0;
-  padding: 0;
-  list-style: none;
-  border-bottom: 1px solid #d0dce8;
-}
-
-.periodicals-main-content__item {
-  margin-bottom: 25px;
-}
-
-.periodicals-main-content__item:last-child {
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
-}
-
-.periodicals-main-content__item-header {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: flex-start;
-
-  @media (min-width: $desktop-width) {
-    display: block;
-  }
-}
-
-.periodicals-main-content__item-title {
-  margin: 0;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 19.98px;
-}
-
-.periodicals-main-content__item-image {
-  box-sizing: content-box;
-  flex-shrink: 0;
-  height: 73px;
-  width: 130px;
-  padding: 5px 0 0 15px;
-  object-fit: cover;
-
-  @media (min-width: $desktop-width) {
-    float: right;
-    margin-bottom: 36px;
-  }
-}
-
-.periodicals-main-content__item-intro {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19.6px;
 }
 
 .periodicals__aside {

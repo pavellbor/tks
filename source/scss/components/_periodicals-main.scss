@@ -1,0 +1,68 @@
+.periodicals-main__header {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.periodicals-main__header-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #333333;
+}
+
+.periodicals-main__list {
+  margin: 0 0 15px 0;
+  padding: 0;
+  list-style: none;
+  color: #444444;
+  border-bottom: 1px solid #d0dce8;
+}
+
+.periodicals-main__item {
+  margin-bottom: 25px;
+}
+
+.periodicals-main__item:last-child {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.periodicals-main__item-header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.periodicals-main__item-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 19.98px;
+}
+
+.periodicals-main__item-image {
+  box-sizing: content-box;
+  flex-shrink: 0;
+  height: 73px;
+  width: 130px;
+  padding: 5px 0 0 15px;
+  object-fit: cover;
+
+  @media (min-width: $desktop-width) {
+    float: right;
+    margin-bottom: 36px;
+  }
+}
+
+.periodicals-main__item-desc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.6px;
+}
