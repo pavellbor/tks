@@ -1,8 +1,8 @@
-.periodicals-hot-content {
+.periodicals-hot {
   color: #444444;
 }
 
-.periodicals-hot-content__title {
+.periodicals-hot__title {
   margin: 0;
   padding: 5px 0 15px 0;
   font-weight: 700;
@@ -15,25 +15,25 @@
   }
 }
 
-.periodicals-hot-content__list {
+.periodicals-hot__list {
   margin: 0 0 10px 0;
   padding: 0;
   list-style: none;
   color: #000000;
 }
 
-.periodicals-hot-content__item {
+.periodicals-hot__item {
   padding: 9px 0 14px 0;
   border-bottom: 1px solid #d0dce8;
 }
 
-.periodicals-hot-content__item:first-child {
+.periodicals-hot__item:first-child {
   @media (min-width: $desktop-width) {
       padding: 0 0 14px 0;
   }
 }
 
-.periodicals-hot-content__item--active {
+.periodicals-hot__item--active {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,14 +45,14 @@
   }
 }
 
-.periodicals-hot-content__item-title {
+.periodicals-hot__item-title {
   margin: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 19.6px;
 }
 
-.periodicals-hot-content__item-image {
+.periodicals-hot__item-image {
   box-sizing: content-box;
   flex-shrink: 0;
   height: 73px;
@@ -68,7 +68,7 @@
 }
 
 
-.periodicals-hot-content__item--active .periodicals-hot-content__item-title {
+.periodicals-hot__item--active .periodicals-hot__item-title {
   font-weight: 700;
 
   @media (min-width: $desktop-width) {
@@ -76,7 +76,7 @@
   }
 }
 
-.periodicals-hot-content__link {
+.periodicals-hot__link {
   display: flex;
   justify-content: center;
   align-items: center;
