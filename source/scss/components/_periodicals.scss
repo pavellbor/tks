@@ -9,20 +9,6 @@
     }
 }
 
-.periodicals::before {
-    content: "";
-    position: absolute;
-    left: -15px;
-    right: -15px;
-    height: 5px;
-    background-color: #e7e7e7;
-
-    @media (min-width: $desktop-width) {
-        left: 0;
-        right: 0;
-    }
-}
-
 .periodicals-main-content__wrapper {
     @media (min-width: $desktop-width) {
         flex-shrink: 0;

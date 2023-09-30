@@ -1,5 +1,6 @@
 .additional-nav {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid $color-divider;
 
   @media (min-width: $desktop-width) {
     padding: 10px 10px 10px 0;
