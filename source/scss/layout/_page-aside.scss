@@ -1,0 +1,8 @@
+.page-aside {
+  grid-area: "aside";
+
+  @media (min-width: $desktop-width) {
+    width: 235px;
+    padding-top: 100px;
+  }
+}

@@ -2,12 +2,6 @@
     padding: 15px 15px 17px 15px;
     color: #000000;
     background-color: #e7e7e7;
-
-    @media (min-width: $desktop-width) {
-        flex-shrink: 0;
-        width: 240px;
-        margin-top: 20px;
-    }
 }
 
 .authors-columns__title {

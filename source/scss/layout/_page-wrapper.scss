@@ -8,5 +8,14 @@
     margin: 0 auto;
     padding-left: $offset-x-desktop;
     padding-right: $offset-x-desktop;
+
+    &--with-aside {
+      display: grid;
+      grid-template-areas: 
+        "header header"
+        "main aside"
+        "footer footer";
+      column-gap: 20px;
+    }
   }
 }
