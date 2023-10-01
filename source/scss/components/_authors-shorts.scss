@@ -1,44 +1,44 @@
-.authors-columns {
+.authors-shorts {
     padding: 17px 15px;
     background-color: $color-divider;
 }
 
-.authors-columns__link {
+.authors-shorts__link {
   color: inherit;
 }
 
-.authors-columns__title {
+.authors-shorts__title {
     margin: 0 0 15px;
     font-weight: 700;
     font-size: 14px;
 }
 
-.authors-columns__list {
+.authors-shorts__list {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-.authors-columns__item {
+.authors-shorts__item {
     display: flex;
     justify-content: space-between;
     margin-bottom: 6px;
 }
 
-.authors-columns__item-title-link {
+.authors-shorts__item-title-link {
     display: block;
     margin-bottom: 4px;
     line-height: 1.4;
     color: inherit;
 }
 
-.authors-columns__item-image {
+.authors-shorts__item-image {
     width: 60px;
     height: 80px;
     object-fit: cover;
 }
 
-.authors-columns__item-copyright-link {
+.authors-shorts__item-copyright-link {
     font-size: 12px;
     line-height: 1;
     color: $color-light-gray;
