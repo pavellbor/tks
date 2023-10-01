@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./partials/_head.html')
+</head>
+
+<body>
+    <div class="page-wrapper page-wrapper--with-aside">
+        @@include('./partials/_header.html')
+
+        <main class="page-main">
+            @@include('./partials/_advertisement.html')
+            @@include('./partials/_additional-nav.html')
+
+            <article class="authors-columns">
+                <div class="authors-columns__main authors-columns-main">
+                    <header class="authors-columns-main__header">
+                        <h1 class="authors-columns-main__header-title">Авторские колонки</h1>
+                    </header>
+                    <div class="authors-columns-main__intro">
+                        Российский таможенный портал TKS.RU представляет актуальные материалы авторов, знакомых не
+                        понаслышке с таможенной тематикой – юристов, экспертов, специалистов по внешнеэкономической
+                        деятельности. Статьи посвящены конкретным проблемам – реформированию таможенного
+                        законодательства, электронному декларированию, тарифному регулированию, логистическим вопросам,
+                        взаимоотношениям бизнеса и властных структур. Приглашаем всех заинтересованных лиц к дискуссии,
+                        а также к созданию интересных и обстоятельных материалов данной тематики. Ждем Ваших предложений
+                        о сотрудничестве. С нами можно связаться по телефону (812) 449-50-61 либо по электронной почте -
+                        <a href="mailto:editor@tks.ru">editor@tks.ru</a>
+                    </div>
+                    <ul class="authors-columns-main__list">
+                        @@for (var i = 0; i < 3; i++) { <li class="authors-columns-main__item">
+                            <a class="authors-columns-main__item-link" href="#">
+                                <h2 class="authors-columns-main__item-title">
+                                    "Кто такая ондатра вообще!" Или как остаться "миллионером"
+                                </h2>
+                            </a>
+                            <div class="authors-columns-main__item-content">
+                                <a class="authors-columns-main__item-link" href="#">
+                                    <img class="authors-columns-main__item-image" src="/img/authors-columns-1-demo.webp"
+                                        width="60" height="80" alt="Фото автора">
+                                </a>
+                                <a class="authors-columns-main__item-link" href="#">
+                                    <span class="authors-columns-main__item-name">
+                                        Чурсина А.Ю.
+                                    </span>
+                                </a>
+                                <time class="authors-columns-main__item-date" datetime="2023-09-04">04.09.2023</time>
+                                <p class="authors-columns-main__item-desc">
+                                    Недавно посмотрела программу "кто хочет стать миллионером", где игроками были дети,
+                                    девочка 8ми лет и мальчик 10ти лет. Дети были молодцы и отвечали на весьма сложные
+                                    вопросы, показывая высокую информированность, но испытыли затруднение в вопросах
+                                    окружающего мира, очевидных для моего поколения в их возрасте.
+                                </p>
+                            </div>
+                            </li>
+                            }
+                    </ul>
+                    <div class="authors-columns-main__pagination">
+                        @@include('./partials/_pagination.html')
+                    </div>
+
+                    <aside class="authors-columns__aside">
+                        <section class="authors-columns-authors">
+                            <a class="authors-columns-authors__link" href="#">
+                                <h3 class="authors-columns-authors__title">Авторы</h3>
+                            </a>
+                            <ul class="authors-columns-authors__list">
+                                @@for (var i = 0; i < 9; i++) { <li class="authors-columns-authors__item">
+                                    <img class="authors-columns-authors__item-image"
+                                        src="/img/authors-columns-1-demo.webp" width="60" height="80" alt="Фото автора">
+                                    <a class="authors-columns-authors__item-name" href="#">
+                                        Чурсина А.Ю.
+                                    </a>
+                                    <p class="authors-columns-authors__item-bio">
+                                        Независимый эксперт по вопросам информационных таможенных технологий
+                                    </p>
+                                    <span class="authors-columns-authors__item-counter">
+                                        Статьи: 1
+                                    </span>
+                                    </li>
+                                    }
+                            </ul>
+                        </section>
+                    </aside>
+                </div>
+            </article>
+        </main>
+        <aside class="page-aside">
+            @@include('./partials/_authors-shorts.html')
+        </aside>
+
+        @@include('./partials/_footer.html')
+    </div>
+    @@include('./partials/_scripts.html')
+</body>
+
+</html>
