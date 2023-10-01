@@ -1,0 +1,72 @@
+.periodicals-main__header {
+  margin-bottom: 23px;
+  padding-top: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 26px;
+    padding-top: 15px;
+  }
+}
+
+.periodicals-main__header-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  color: $color-dark-gray;
+}
+
+.periodicals-main__list {
+  display: grid;
+  margin: 0 0 15px 0;
+  padding: 0;
+  list-style: none;
+  color: $color-gray;
+  border-bottom: 1px solid $color-primary-light;
+}
+
+.periodicals-main__item {
+  margin-bottom: 27px;
+  clear: both;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+.periodicals-main__item-link {
+  color: inherit;
+}
+
+.periodicals-main__item-title {
+  margin: 0 0 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.periodicals-main__item-image {
+  float: right;
+  box-sizing: content-box;
+  height: 73px;
+  width: 130px;
+  padding-left: 15px;
+  object-fit: cover;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 36px;
+  }
+}
+
+.periodicals-main__item-desc {
+  margin: 0;
+}
+
+.periodicals-main__pagination {
+  @media (min-width: $desktop-width) {
+    padding-left: 5px;
+  }
+}

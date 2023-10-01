@@ -1,0 +1,24 @@
+.periodicals {
+  padding-bottom: 28px;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: flex-start;
+    padding-bottom: 34px;
+  }
+}
+
+.periodicals__main {
+  @media (min-width: $desktop-width) {
+    flex-shrink: 0;
+    width: 455px;
+    margin-right: 25px;
+  }
+}
+
+.periodicals__aside {
+  @media (min-width: $desktop-width) {
+    width: 225px;
+    padding-top: 15px;
+  }
+}

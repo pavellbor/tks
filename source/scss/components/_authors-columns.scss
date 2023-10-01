@@ -1,0 +1,45 @@
+.authors-columns {
+    padding: 17px 15px;
+    background-color: $color-divider;
+}
+
+.authors-columns__link {
+  color: inherit;
+}
+
+.authors-columns__title {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.authors-columns__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.authors-columns__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+}
+
+.authors-columns__item-title-link {
+    display: block;
+    margin-bottom: 4px;
+    line-height: 1.4;
+    color: inherit;
+}
+
+.authors-columns__item-image {
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.authors-columns__item-copyright-link {
+    font-size: 12px;
+    line-height: 1;
+    color: $color-light-gray;
+}

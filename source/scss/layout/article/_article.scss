@@ -2,20 +2,6 @@
   position: relative;
   margin-bottom: 34px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: -$offset-x-mobile;
-    right: -$offset-x-mobile;
-    height: 5px;
-    background-color: $color-divider;
-
-    @media (min-width: $desktop-width) {
-      left: 0;
-      right: 0;
-    }
-  }
-
   p {
     margin: 12px 0;
 
