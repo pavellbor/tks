@@ -27,7 +27,7 @@
 
   &:first-child {
     @media (min-width: $desktop-width) {
-      padding: 0 0 14px;
+      padding-top: 0;
     }
   }
 
@@ -47,8 +47,16 @@
 .periodicals-hot__item-link {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   color: inherit;
+
+  @media (max-width: $desktop-width) {
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    gap: 7px;
+  }
 }
 
 .periodicals-hot__item-title {

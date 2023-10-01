@@ -1,9 +1,9 @@
 .page-aside {
-  grid-area: "aside";
+  grid-area: aside;
   margin-bottom: 8px;
 
   @media (min-width: $desktop-width) {
-    width: 235px;
-    padding-top: 100px;
+    margin-right: -5px;
+    padding-top: 104px;
   }
 }
