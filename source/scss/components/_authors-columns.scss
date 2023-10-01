@@ -4,6 +4,10 @@
     background-color: #e7e7e7;
 }
 
+.authors-columns__link {
+  color: inherit;
+}
+
 .authors-columns__title {
     margin: 0 0 15px 0;
     font-weight: 700;
@@ -23,11 +27,13 @@
     margin-bottom: 7px;
 }
 
-.authors-columns__item-title {
+.authors-columns__item-title-link {
+    display: block;
     margin: 0 0 5px 0;
     font-weight: 400;
     font-size: 14px;
     line-height: 19.6px;
+    color: inherit;
 }
 
 .authors-columns__item-image {
@@ -35,7 +41,7 @@
     height: 80px;
 }
 
-.authors-columns__item-copyright {
+.authors-columns__item-copyright-link {
     font-size: 12px;
     line-height: 16.8px;
     color: #989898;
