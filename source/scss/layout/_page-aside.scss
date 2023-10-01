@@ -1,5 +1,6 @@
 .page-aside {
   grid-area: "aside";
+  margin-bottom: 8px;
 
   @media (min-width: $desktop-width) {
     width: 235px;
