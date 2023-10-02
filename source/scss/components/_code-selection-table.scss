@@ -20,7 +20,7 @@
       text-align: right;
     }
 
-    @media (max-width: $desktop-width) {
+    @media (max-width: $mobile-width) {
       padding: 10px;
 
       &:first-child,

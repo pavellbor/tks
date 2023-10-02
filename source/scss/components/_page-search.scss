@@ -18,7 +18,7 @@
   background-color: $color-primary-dark;
   border-radius: $radius-md;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $mobile-width) {
     width: 40px;
     height: 40px;
     font-size: 0;

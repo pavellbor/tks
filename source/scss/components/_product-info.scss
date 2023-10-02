@@ -12,7 +12,7 @@
   padding: 15px;
   border-bottom: 1px solid $color-border-control;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $mobile-width) {
     padding: 10px 15px;
   }
 }

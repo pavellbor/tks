@@ -3,14 +3,14 @@
 }
 
 .outer-mobile {
-  @media (max-width: $desktop-width) {
+  @media (max-width: $mobile-width) {
     margin-left: -$offset-x-mobile;
     margin-right: -$offset-x-mobile;
   }
 }
 
 .swiper {
-  @media (max-width: $desktop-width) {
+  @media (max-width: $mobile-width) {
     position: relative;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -48,7 +48,7 @@
 }
 
 .as-desktop {
-  @media (max-width: $desktop-width) {
+  @media (max-width: $mobile-width) {
     display: none !important;
   }
 }

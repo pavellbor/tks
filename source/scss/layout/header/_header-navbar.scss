@@ -3,7 +3,7 @@
   grid-template-areas: "logo search" "nav nav";
   align-items: center;
   
-  @media (max-width: $desktop-width) {
+  @media (max-width: $mobile-width) {
     gap: 15px;
   }
 

@@ -22,7 +22,7 @@
     border-bottom: 1px solid $color-divider;
   }
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $mobile-width) {
     flex-direction: column;
     margin-bottom: 15px;
   }

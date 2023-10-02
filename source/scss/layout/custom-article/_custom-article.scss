@@ -6,7 +6,7 @@
   padding: 14px 0;
   max-width: 900px;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $mobile-width) {
     display: grid;
     gap: 5px;
   }
@@ -36,7 +36,7 @@
 .custom-article__row {
   display: grid;
 
-  @media (max-width: $desktop-width) {
+  @media (max-width: $mobile-width) {
     &--tn-ved {
       .custom-article__alert {
         display: none;
@@ -73,7 +73,7 @@
 }
 
 .custom-article__search {
-  @media (max-width: $desktop-width) {
+  @media (max-width: $mobile-width) {
     margin: 7px 0;
   }
 
@@ -83,7 +83,7 @@
 }
 
 .custom-article__alert {
-  @media (max-width: $desktop-width) {
+  @media (max-width: $mobile-width) {
     margin: 15px 0;
   }
 }
