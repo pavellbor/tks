@@ -15,14 +15,18 @@
     margin-bottom: 35px;
     list-style: none;
     padding: 0 $offset-x-mobile;
+
+    @media (min-width: $desktop-width) {
+        display: block;
+    }
 }
 
 .authors-columns-authors__item {
     display: grid;
-    grid-template-areas: 
-    "image name"
-    "image bio"
-    "counter bio";
+    grid-template-areas:
+        "image name"
+        "image bio"
+        "counter bio";
     grid-column-gap: 10px;
     grid-row-gap: 8px;
     flex-shrink: 0;

@@ -1,0 +1,22 @@
+.authors-columns {
+    @media (min-width: $desktop-width) {
+        display: flex;
+        align-items: flex-start;
+        padding-bottom: 34px;
+    }
+}
+
+.authors-columns__main {
+    @media (min-width: $desktop-width) {
+        flex-shrink: 0;
+        width: 455px;
+        margin-right: 25px;
+    }
+}
+
+.authors-columns__aside {
+    @media (min-width: $desktop-width) {
+        width: 225px;
+        padding-top: 15px;
+    }
+}

@@ -59,31 +59,30 @@
                     <div class="authors-columns-main__pagination">
                         @@include('./partials/_pagination.html')
                     </div>
-
-                    <aside class="authors-columns__aside">
-                        <section class="authors-columns-authors">
-                            <a class="authors-columns-authors__link" href="#">
-                                <h3 class="authors-columns-authors__title">Авторы</h3>
-                            </a>
-                            <ul class="authors-columns-authors__list swiper outer-mobile">
-                                @@for (var i = 0; i < 9; i++) { <li class="authors-columns-authors__item">
-                                    <img class="authors-columns-authors__item-image"
-                                        src="/img/authors-columns-1-demo.webp" width="60" height="80" alt="Фото автора">
-                                    <a class="authors-columns-authors__item-name" href="#">
-                                        Чурсина А.Ю.
-                                    </a>
-                                    <p class="authors-columns-authors__item-bio">
-                                        Независимый эксперт по вопросам информационных таможенных технологий
-                                    </p>
-                                    <span class="authors-columns-authors__item-counter">
-                                        Статьи: 1
-                                    </span>
-                                    </li>
-                                    }
-                            </ul>
-                        </section>
-                    </aside>
                 </div>
+                <aside class="authors-columns__aside">
+                    <section class="authors-columns-authors">
+                        <a class="authors-columns-authors__link" href="#">
+                            <h3 class="authors-columns-authors__title">Авторы</h3>
+                        </a>
+                        <ul class="authors-columns-authors__list swiper outer-mobile">
+                            @@for (var i = 0; i < 9; i++) { <li class="authors-columns-authors__item">
+                                <img class="authors-columns-authors__item-image"
+                                    src="/img/authors-columns-1-demo.webp" width="60" height="80" alt="Фото автора">
+                                <a class="authors-columns-authors__item-name" href="#">
+                                    Чурсина А.Ю.
+                                </a>
+                                <p class="authors-columns-authors__item-bio">
+                                    Независимый эксперт по вопросам информационных таможенных технологий
+                                </p>
+                                <span class="authors-columns-authors__item-counter">
+                                    Статьи: 1
+                                </span>
+                                </li>
+                                }
+                        </ul>
+                    </section>
+                </aside>
             </article>
         </main>
         <aside class="page-aside">
