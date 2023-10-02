@@ -1,6 +1,10 @@
 .authors-columns-main__header {
     margin-bottom: 23px;
     padding-top: 20px;
+
+    @media (min-width: $desktop-width) {
+        padding-top: 13px;
+    }
 }
 
 .authors-columns-main__header-title {
@@ -33,6 +37,10 @@
     &:last-child {
         margin-bottom: 17px;
         border-bottom: 1px solid $color-primary-light;
+
+        @media (min-width: $desktop-width) {
+            margin-bottom: 14px;
+        }
     }
 }
 
@@ -53,6 +61,7 @@
         "image name date"
         "image content content";
     grid-template-columns: 60px auto 1fr;
+    grid-template-rows: auto 1fr;
     grid-column-gap: 10px;
     grid-row-gap: 8px;
 }
@@ -79,4 +88,8 @@
 
 .authors-columns-main__pagination {
     margin-bottom: 34px;
+
+    @media (min-width: $desktop-width) {
+        padding-left: 6px;
+    }
 }
