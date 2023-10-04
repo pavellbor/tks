@@ -1,0 +1,21 @@
+.item-price {
+    font-size: 11px;
+}
+
+.item-price__list {
+    display: flex;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 8px;
+    list-style: none;
+}
+
+.item-price__item {
+    line-height: 1;
+}
+
+.item-price__item a {
+    display: contents;
+    color: $color-primary;
+}
