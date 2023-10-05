@@ -1,0 +1,32 @@
+.item-price {
+    font-size: 11px;
+
+    @media (min-width: $desktop-width) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -14px;
+    }
+}
+
+.item-price__list {
+    display: flex;
+    gap: 4px;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 8px;
+    list-style: none;
+
+    @media (min-width: $desktop-width) {
+        padding: 0;
+        align-items: center;
+    }
+}
+
+.item-price__item {
+    line-height: 1;
+}
+
+.item-price__item a {
+    display: contents;
+    color: $color-primary;
+}

@@ -1,0 +1,82 @@
+.software-section__header {
+    margin-bottom: 27px;
+    padding-top: 21px;
+
+    @media (min-width: $desktop-width) {
+        padding-top: 15px;
+    }
+}
+
+.software-section__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.software-section__item {
+    margin-bottom: 20px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid $color-divider;
+
+    @media (min-width: $desktop-width) {
+        display: grid;
+        grid-template-columns: 225px 460px;
+        grid-column-gap: 20px;
+        padding-bottom: 43px;
+    }
+}
+
+.software-section__item--legislation {
+    @media (max-width: $mobile-width) {
+        padding-bottom: 24px;
+    }
+}
+
+.software-section__item-header {
+    margin-bottom: 20px;
+}
+
+.software-section__item-header p {
+    margin: 0;
+}
+
+.software-section__item-title {
+    vertical-align: top;
+}
+
+.software-section__item-link {
+    display: contents;
+    color: $color;
+}
+
+.software-section__item-desc {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+
+    @media (min-width: $desktop-width) {
+        column-gap: 30px;
+        margin-bottom: 10px;
+    }
+}
+
+.software-section__item-desc span {
+    padding-bottom: 10px;
+}
+
+.software-section__item-price {
+    font-size: 11px;
+}
+
+.software-section__item-feedback {
+    margin: 0;
+    text-align: center;
+    font-size: 11px;
+    line-height: 1;
+
+    @media (min-width: $desktop-width) {
+        padding-top: 5px;
+        padding-right: 42px;
+        text-align: right;
+    }
+}

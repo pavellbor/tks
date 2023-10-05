@@ -21,3 +21,21 @@
     color: rgba(0, 0, 0, 0.45);
   }
 }
+
+.article-breadcrumb--software {
+  .article-breadcrumb__item {
+    a {
+      color: $color;
+    }
+
+    &:not(:last-child)::after {
+      content: "/";
+      margin-left: 1px;
+      color: $color;
+    }
+
+    &--active {
+      color: $color;
+    }
+  }
+}
