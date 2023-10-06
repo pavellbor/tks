@@ -314,11 +314,12 @@
 
 .custom-table--price {
   @media (max-width: $mobile-width) {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
     .custom-table__row {
       display: flex;
       flex-direction: column;
+      margin-bottom: 10px;
     }
 
     .custom-table__row:not(.as-desktop)+.custom-table__row {
@@ -337,16 +338,16 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 12px 0;
+      padding: 11px 0;
       border-bottom: 1px solid $color-divider;
 
       &--desc {
         justify-content: center;
-        padding: 14px 0;
+        padding: 14px 0 5px 0;
         border-bottom: 1px solid $color-white;
       }
     }
-    
+
     .custom-table__data--bold {
       margin-left: 5px;
       padding-right: 41px;
@@ -362,32 +363,32 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    margin-bottom: 13px;
-    
-    .custom-table__row {
-      display: grid;
-      grid-template-columns: 193px 108px 159px;
-      justify-content: center;
-      align-items: center;
-      border-bottom: 1px solid $color-divider;
+    display: table;
+    width: 100%;
+    margin-bottom: 7px;
 
-      &:first-child {
-        border-top: 1px solid $color-divider;
-      }
+    .custom-table__row {
+      display: table-row;
+      border-bottom: 1px solid $color-divider;
     }
 
     .custom-table__row:not(.as-desktop)+.custom-table__row {
       margin-top: 0px;
       border-top: none;
     }
-    
+
+    .custom-table__row .custom-table__data:first-child {
+      display: table-cell;
+    }
+
     .custom-table__heading {
-      justify-self: center;
+      display: table-cell;
       margin-bottom: 0;
-      padding: 8px 0;
+      padding: 0;
+      padding-bottom: 17px;
       font-weight: 400;
       line-height: 1;
+      text-align: center;
     }
 
     .custom-table__heading:first-child {
@@ -415,26 +416,90 @@
     }
 
     .custom-table__col {
-      padding: 10px 0;
+      display: table-cell;
+      padding-top: 7px;
+      padding-bottom: 5px;
+      vertical-align: top;
       border: none;
-      
-      
+
+
       .custom-table__data {
         display: flex;
         flex-direction: column;
+        gap: 2px;
       }
-      
+
       .custom-table__data--crossed {
         align-self: center;
-        font-size: 10px;
         text-decoration: line-through;
       }
 
       .custom-table__data--bold {
         align-self: center;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: 700;
       }
     }
+  }
+}
+
+.custom-table--price-softwares {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 15px;
+
+    .custom-table__row {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .custom-table__row:not(.as-desktop)+.custom-table__row {
+      margin-top: 0px;
+      border-top: none;
+    }
+
+    .custom-table__heading {
+      margin-bottom: 0;
+      padding: 0;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .custom-table__col {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 11px 0;
+      border-bottom: 1px solid $color-divider;
+
+      &--desc {
+        position: relative;
+        justify-content: center;
+        padding: 11px 0 11px 0;
+        border-bottom: 1px solid $color-white;
+      }
+
+      &--desc::before {
+        content: "";
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $color-divider;
+      }
+    }
+
+    .custom-table__data--bold {
+      margin-left: 5px;
+      padding-right: 41px;
+      font-size: 16px;
+      font-weight: 700;
+    }
+
+    .custom-table__data--crossed {
+      font-size: 14px;
+      text-decoration: line-through;
+    }
+
   }
 }
