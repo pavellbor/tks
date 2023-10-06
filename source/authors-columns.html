@@ -67,17 +67,19 @@
                         </a>
                         <ul class="authors-columns-authors__list swiper outer-mobile">
                             @@for (var i = 0; i < 9; i++) { <li class="authors-columns-authors__item">
-                                <img class="authors-columns-authors__item-image"
-                                    src="/img/authors-columns-1-demo.webp" width="60" height="80" alt="Фото автора">
+                                <div class="authors-columns-authors__item-wrapper">
+                                    <img class="authors-columns-authors__item-image" src="/img/authors-columns-1-demo.webp"
+                                        width="60" height="80" alt="Фото автора">
+                                    <span class="authors-columns-authors__item-counter">
+                                        Статьи: 1
+                                    </span>
+                                </div>
                                 <a class="authors-columns-authors__item-name" href="#">
                                     Чурсина А.Ю.
                                 </a>
                                 <p class="authors-columns-authors__item-bio">
                                     Независимый эксперт по вопросам информационных таможенных технологий
                                 </p>
-                                <span class="authors-columns-authors__item-counter">
-                                    Статьи: 1
-                                </span>
                                 </li>
                                 }
                         </ul>
