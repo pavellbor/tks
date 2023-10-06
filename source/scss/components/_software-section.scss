@@ -20,7 +20,7 @@
 
     @media (min-width: $desktop-width) {
         display: grid;
-        grid-template-columns: 225px 460px;
+        grid-template-columns: 225px 1fr;
         grid-column-gap: 20px;
         padding-bottom: 43px;
     }
