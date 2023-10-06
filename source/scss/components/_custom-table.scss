@@ -109,6 +109,7 @@
         "desc desc"
         "flag flag";
       grid-row-gap: 6px;
+      grid-template-columns: 1fr 1fr;
 
       &:last-child {
         grid-row-gap: 0;
