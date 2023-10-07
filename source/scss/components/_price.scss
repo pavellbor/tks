@@ -58,12 +58,12 @@
 
     @media (min-width: $desktop-width) {
         text-align: right;
-        padding-right: 37px;
+        padding-right: 41px;
     }
 }
 
 .price__software {
-    padding-top: 45px;
+    padding-top: 48px;
 
     @media (min-width: $desktop-width) {
         padding-top: 33px;
@@ -84,6 +84,14 @@
     padding: 0;
     padding-top: 15px;
     list-style: none;
+
+    @media (min-width: $desktop-width) {
+        padding-top: 0;
+    }
+}
+
+.price__software-price {
+    padding-top: 10px;
 }
 
 .price__software-item-title {
