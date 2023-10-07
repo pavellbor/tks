@@ -39,3 +39,30 @@
     }
   }
 }
+
+.article-breadcrumb--legislation-news-item {
+  
+  .article-breadcrumb__list {
+    flex-wrap: wrap;
+    column-gap: 7px;
+    row-gap: 0;
+  }
+
+  .article-breadcrumb__item {
+    line-height: 1.15;
+
+    a {
+      color: $color;
+    }
+
+    &:not(:last-child)::after {
+      content: "/";
+      margin-left: 1px;
+      color: $color;
+    }
+
+    &--active {
+      color: $color;
+    }
+  }
+}

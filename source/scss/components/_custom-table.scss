@@ -574,3 +574,24 @@
     }
   }
 }
+
+.custom-table--legislation {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 8px;
+    font-size: 12px;
+
+    .custom-table__col {
+      padding: 9px 0;
+      border-bottom: 1px solid $color-divider;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    display: table;
+    width: 100%;
+  }
+}
