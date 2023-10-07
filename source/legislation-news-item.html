@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./partials/_head.html')
+</head>
+
+<body>
+    <div class="page-wrapper page-wrapper--with-aside">
+        @@include('./partials/_header.html')
+
+        <main class="page-main">
+            @@include('./partials/_advertisement.html')
+            @@include('./partials/_additional-nav.html')
+
+            <article class="legislation-news-item">
+                <header class="legislation-news-item__header">
+                    <nav
+                        class="legislation-news-item__nav article-header__breadcrumb article-breadcrumb article-breadcrumb--software">
+                        <ol class="article-breadcrumb__list">
+                            <li class="article-breadcrumb__item">
+                                <a href="#">Главная страница</a>
+                            </li>
+                            <li class="article-breadcrumb__item article-breadcrumb__item--active">
+                                <a href="#">Новости законадательства</a>
+                            </li>
+                            <li class="article-breadcrumb__item article-breadcrumb__item--active">
+                                <a href="#">N 1424 от 01.09.2023</a>
+                            </li>
+                        </ol>
+                    </nav>
+                    <time class="legislation-news-item__date" datetime="2021-09-4">4 сентября 2023</time>
+                    <a class="legislation-news-item__link" href="#">Версия для печати</a>
+                </header>
+                <div class="legislation-news-item__subtitle">
+                    Постановление Правительства РФ от 01 сентября 2023 N 1424
+                </div>
+                <div class="legislation-news-item__title">
+                    Об освобождении от предоставления обеспечения исполнения обязанности по уплате таможенных пошлин,
+                    налогов в отношении отдельных категорий товаров
+                </div>
+                <div class="legislation-news-item__content">
+                    <p>
+                        В соответствии с частью 3 статьи 55 Федерального закона "О таможенном регулировании в Российской
+                        Федерации и о внесении изменений в отдельные законодательные акты Российской Федерации"
+                        Правительство Российской Федерации постановляет:
+                    </p>
+                    <p>
+                        1. Установить, что обеспечение исполнения обязанности по уплате таможенных пошлин, налогов не
+                        предоставляется в отношении товаров, предназначенных для строительства (создания, сооружения)
+                        находящихся за пределами территории Российской Федерации искусственных островов, установок,
+                        сооружений или иных объектов, в отношении которых Российская Федерация обладает исключительной
+                        юрисдикцией, а также для обеспечения функционирования (эксплуатации, использования) указанных
+                        объектов и жизнедеятельности лиц, находящихся на соответствующих территориях (далее - товары),
+                        при их ввозе на территорию Российской Федерации и перевозке (транспортировке) в соответствии с
+                        таможенной процедурой таможенного транзита автомобильным транспортом, а также при их помещении
+                        на временное хранение в помещениях, на складах, открытых площадках и иных территориях получателя
+                        товаров.
+                    </p>
+                </div>
+                <div class="legislation-news-item__data">
+                    <table class="software-section__custom-table custom-table custom-table--legislation">
+                        <tr class="custom-table__row as-desktop">
+                            <th class="custom-table__heading">Издавший орган</th>
+                            <th class="custom-table__heading">Тип документа</th>
+                            <th class="custom-table__heading">Номер документа</th>
+                            <th class="custom-table__heading">Дата документа</th>
+                        </tr>
+                        <tr class="custom-table__row">
+                            <td class="custom-table__col">
+                                <span class="custom-table__heading as-mobile">Издавший орган</span>
+                                <span class="custom-table__data">Правительство РФ</span>
+                            </td>
+                            <td class="custom-table__col">
+                                <span class="custom-table__heading as-mobile">Тип документа</span>
+                                <span class="custom-table__data">Постановление</span>
+                            </td>
+                            <td class="custom-table__col">
+                                <span class="custom-table__heading as-mobile">Номер документа</span>
+                                <span class="custom-table__data">1424</span>
+                            </td>
+                            <td class="custom-table__col">
+                                <span class="custom-table__heading as-mobile">Дата документа</span>
+                                <span class="custom-table__data">01.09.2023</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="legislation-news-item__social">
+                    <img class="legislation-news-item__social-icon" src="/img/legislation-news-item-telegram.webp"
+                        width="30" height="30" alt="Иконка телеграмма">
+                    <div class="legislation-news-item__social-content">
+                        <div class="legislation-news-item__social-cta">
+                            Подписывайтесь на наши каналы в Telegram:
+                        </div>
+                        <ul class="legislation-news-item__social-list">
+                            <li class="legislation-news-item__social-item">
+                                <a class="legislation-news-item__social-item-link" href="#">
+                                    TKS.RU - редакционный дайджест
+                                </a>
+                            </li>
+                            <li class="legislation-news-item__social-item">
+                                <a class="legislation-news-item__social-item-link" href="#">
+                                    TKS.RU - вся лента
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </main>
+        <aside class="page-aside">
+            @@include('./partials/_authors-shorts.html')
+        </aside>
+
+        @@include('./partials/_footer.html')
+    </div>
+    @@include('./partials/_scripts.html')
+</body>
+
+</html>
