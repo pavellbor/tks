@@ -593,5 +593,22 @@
   @media (min-width: $desktop-width) {
     display: table;
     width: 100%;
+    font-size: 12px;
+
+    .custom-table__row {
+      display: table-row;
+      border-top: 1px solid $color-divider;
+    }
+
+    .custom-table__heading {
+      display: table-cell;
+      padding: 9px 13px 9px 9px;
+      font-weight: inherit;
+    }
+
+    .custom-table__col {
+      display: table-cell;
+      padding: 9px 13px 9px 9px;
+    }
   }
 }
