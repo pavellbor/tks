@@ -1,6 +1,10 @@
 .database {
     padding-top: 26px;
     padding-bottom: 20px;
+
+    @media (min-width: $desktop-width) {
+        padding-top: 21px;
+    }
 }
 
 .database__title {
@@ -23,13 +27,19 @@
     margin: 0;
     padding: 0;
     list-style: none;
+
+    @media (min-width: $desktop-width) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .database__item {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 14px;
+    margin-bottom: 13px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 14px;
+    }
 
     &:last-child {
         margin-bottom: 0;
@@ -50,6 +60,7 @@
 .database__item-image {
     width: 32px;
     height: 32px;
+    margin-bottom: 16px;
 }
 
 .database__item-date {
@@ -57,11 +68,26 @@
     font-size: 10px;
     color: #333;
     line-height: 1;
+
+    @media (min-width: $desktop-width) {
+        margin-left: 10px;
+        padding-right: 10px;
+    }
 }
 
-.database__item-content {
+.database__item .database__item-content {
     margin: 0;
+    margin-bottom: 19px;
     padding: 0;
+    padding-right: 5px;
     font-size: 12px;
     line-height: 1.6;
+
+    @media (min-width: $desktop-width) {
+        padding-right: 10px; 
+    }
+}
+
+.database__item .database__item-content:last-child {
+    margin-bottom: 0;
 }
