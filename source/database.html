@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./partials/_head.html')
+</head>
+
+<body>
+    <div class="page-wrapper page-wrapper--with-aside">
+        @@include('./partials/_header.html')
+
+        <main class="page-main">
+            @@include('./partials/_advertisement.html')
+            @@include('./partials/_additional-nav.html')
+
+            <div class="database">
+                <div class="database__header">
+                    <nav class="database__nav article-header__breadcrumb article-header__breadcrumb--legislation-news-item article-breadcrumb article-breadcrumb--legislation-news-item">
+                        <ol class="article-breadcrumb__list">
+                            <li class="article-breadcrumb__item">
+                                <a href="#">Главная страница</a>
+                            </li>
+                            <li class="article-breadcrumb__item article-breadcrumb__item--active">
+                                <a href="#">Базы данных</a>
+                            </li>
+                        </ol>
+                    </nav>
+                    <div class="database__title">
+                        Базы данных on-line: таможни, банки, СВХ, МДП, брокеры, перевозчики и др.
+                    </div>
+                </div>
+                <div class="database__info">
+                    Представленные базы данных являются аналогом БД НСИ (нормативно-справочной информации), обновляются регулярно. Дата обновления указана справа от названия каждой из баз.
+                </div>
+                <ul class="database__list">
+                    <li class="database__item">
+                        <div class="database__item-header">
+                            <div class="database__item-title">
+                                <img class="database__item-image" src="/img/database-customs.webp"
+                                width="32" height="32" alt="Таможни">
+                                <a href="#">Таможни</a>
+                            </div>
+                            <div class="database__item-date">
+                                <time datetime="2023-05-18">18.05.2023</time>
+                            </div>
+                        </div>
+                        <p class="database__item-content">
+                            Справочник "Таможенные органы России и их структурные подразделения" содержит реестр таможенных органов, зарегистрированных на территории РФ, а также о таможенных органах некоторых стран СНГ и Представительствах таможенной службы России в иностранных государствах.
+                        </p>
+                    </li>
+                    <li class="database__item">
+                        <div class="database__item-header">
+                            <div class="database__item-title">
+                                <img class="database__item-image" src="/img/database-svh.webp"
+                                width="32" height="32" alt="СВХ и ТС">
+                                <a href="#">СВХ и ТС</a>
+                            </div>
+                            <div class="database__item-date">
+                                <time datetime="2023-05-18">18.05.2023</time>
+                            </div>
+                        </div>
+                        <p class="database__item-content">
+                            Таможенные склады и склады временного хранения являются местами доставки товаров под таможенным контролем.
+                        </p>
+                        <p class="database__item-content">
+                            Реестр складов используется при решении задачи контроля за доставкой товаров.
+                        </p>
+                    </li>
+                    <li class="database__item">
+                        <div class="database__item-header">
+                            <div class="database__item-title">
+                                <img class="database__item-image" src="/img/database-banks.webp"
+                                width="32" height="32" alt="Банки">
+                                <a href="#">Банки</a>
+                            </div>
+                            <div class="database__item-date">
+                                <time datetime="2023-05-18">18.05.2023</time>
+                            </div>
+                        </div>
+                        <p class="database__item-content">
+                            Справочник "Список уполномоченных банков" содержит реестр банков, либо его филиалов, оформляющих паспорта сделок, как для экспортных, так и для импортных внешнеторговых контрактов и зарегистрированных на территории Российской Федерации.
+                        </p>
+                    </li>
+                    <li class="database__item">
+                        <div class="database__item-header">
+                            <div class="database__item-title">
+                                <img class="database__item-image" src="/img/database-brokers.webp"
+                                width="32" height="32" alt="Таможенные представители (брокеры)">
+                                <a href="#">Таможенные представители (брокеры)</a>
+                            </div>
+                            <div class="database__item-date">
+                                <time datetime="2023-05-18">18.05.2023</time>
+                            </div>
+                        </div>
+                        <p class="database__item-content">
+                            Таможенный представитель - юридическое лицо государства - члена таможенного союза, включённое в Реестр таможенных представителей в порядке, предусмотренном законодательством государств - членов таможенного союза.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </main>
+
+        @@include('./partials/_footer.html')
+    </div>
+    @@include('./partials/_scripts.html')
+</body>
+
+</html>
