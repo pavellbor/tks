@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @@include('./partials/_head.html')
+</head>
+
+<body>
+    <div class="page-wrapper page-wrapper--with-aside">
+        @@include('./partials/_header.html')
+
+        <main class="page-main">
+            @@include('./partials/_advertisement.html')
+            @@include('./partials/_additional-nav.html')
+
+            <div class="legislation-news">
+                <div class="legislation-news__title">
+                    Новости законодательства
+                </div>
+                <ul class="legislation-news__filters">
+                    <li class="legislation-news__filter legislation-news__filter--active">
+                        <a class="legislation-news__filter-link legislation-news__filter-link--active" href="#">все документы</a>
+                    </li>
+                    <li class="legislation-news__filter">
+                        <a class="legislation-news__filter-link" href="#">Правительство</a>
+                    </li>
+                    <li class="legislation-news__filter">
+                        <a class="legislation-news__filter-link" href="#">ЕАЭС</a>
+                    </li>
+                    <li class="legislation-news__filter">
+                        <a class="legislation-news__filter-link" href="#">ФТС</a>
+                    </li>
+                    <li class="legislation-news__filter">
+                        <a class="legislation-news__filter-link" href="#">прочие</a>
+                    </li>
+                    <li class="legislation-news__filter">
+                        <a class="legislation-news__filter-link" href="#">только важные</a>
+                    </li>
+                </ul>
+                <div class="legislation-news__pagination">
+                    @@include('./partials/_pagination.html')
+                </div>
+                <ul class="legislation-news__list">
+                    @@for (var i = 0; i < 5; i++) {
+                        <li class="legislation-news__item">
+                            <time class="legislation-news__item-date" datetime="2023-09-12">14.09</time>
+                            <p class="legislation-news__item-announce">
+                                Коллегия ЕЭК: О наложении штрафов за непредставление сведений (информации) (Решение от 19 сентября 2023 N 142)
+                            </p>
+                            <p class="legislation-news__item-announce--important">
+                                Правительство РФ: О ставках вывозных таможенных пошлин на товары, вывозимые из Российской Федерации за пределы таможенной территории Евразийского экономического союза, и о внесении изменений в ставки вывозных таможенных пошлин на товары, вывозимые из Российской Федерации за пределы таможенной территории Евразийского экономического союза
+                            </p>
+                            <p class="legislation-news__item-announce--important">
+                                Правительство РФ: О ставках вывозных таможенных пошлин на товары, вывозимые из Российской Федерации
+                            </p>
+                        </li>
+                    }
+                </ul>
+                <div class="legislation-news__pagination">
+                    @@include('./partials/_pagination.html')
+                </div>
+            </div>
+        </main>
+        <aside class="page-aside">
+            @@include('./partials/_authors-shorts.html')
+        </aside>
+
+        @@include('./partials/_footer.html')
+    </div>
+    @@include('./partials/_scripts.html')
+</body>
+
+</html>
