@@ -15,7 +15,12 @@
         "header header"
         "main aside"
         "footer footer";
+      grid-template-columns: 1fr 235px;
       column-gap: 20px;
+
+      .page-main {
+        max-width: none;
+      }
     }
   }
 }
