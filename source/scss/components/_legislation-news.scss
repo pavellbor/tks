@@ -1,6 +1,10 @@
 .legislation-news {
     padding-top: 21px;
     padding-bottom: 30px;
+
+    @media (min-width: $desktop-width) {
+        padding-top: 16px;
+    }
 }
 
 .legislation-news__title {
@@ -46,6 +50,11 @@
     padding-top: 11px;
     list-style: none;
     font-size: 12px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 27px;
+        padding-top: 5px;
+    }
 }
 
 .legislation-news__item-date {
@@ -65,6 +74,11 @@
 }
 
 .legislation-news__pagination {
+    .pagination {
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
     .pagination__list {
         margin-bottom: 0;
     }
