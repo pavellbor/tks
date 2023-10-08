@@ -1,0 +1,81 @@
+.legislation-news {
+    padding-top: 21px;
+    padding-bottom: 30px;
+}
+
+.legislation-news__title {
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.legislation-news__filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    margin: 0;
+    margin-bottom: 25px;
+    padding: 0;
+    list-style: none;
+}
+
+.legislation-news__filter {
+    padding: 3px 7px;
+    border-radius: 5px;
+}
+
+.legislation-news__filter--active {
+    background-color: $color-primary;
+    color: $color-bg-main;
+}
+
+.legislation-news__filter-link {
+    color: $color-primary;
+}
+
+.legislation-news__filter-link--active {
+    color: $color-bg-main;
+}
+
+.legislation-news__list {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    padding-top: 11px;
+    list-style: none;
+    font-size: 12px;
+}
+
+.legislation-news__item-date {
+    margin-bottom: 4px;
+    color: $color-light-gray;
+}
+
+.legislation-news__item-announce {
+    margin: 0;
+    margin-bottom: 9px;
+    padding: 0;
+    line-height: 1.25;
+}
+
+.legislation-news__item-announce--important {
+    font-weight: 700;
+}
+
+.legislation-news__pagination {
+    .pagination__list {
+        margin-bottom: 0;
+    }
+
+    .pagination__title {
+        margin-bottom: 11px;
+        font-size: 14px;
+    }
+
+    .pagination__link {
+        padding: 0 6px;
+        font-size: 14px;
+    }
+}
