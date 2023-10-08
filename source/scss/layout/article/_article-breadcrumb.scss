@@ -66,3 +66,27 @@
     }
   }
 }
+
+.article-breadcrumb--database {
+  .article-breadcrumb__list {
+    margin-bottom: 10px;
+  }
+
+  .article-breadcrumb__item {
+    line-height: 1.15;
+
+    a {
+      color: $color;
+    }
+
+    &:not(:last-child)::after {
+      content: "/";
+      margin-left: 1px;
+      color: $color;
+    }
+
+    &--active {
+      color: $color;
+    }
+  }
+}
