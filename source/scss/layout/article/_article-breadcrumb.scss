@@ -91,3 +91,34 @@
     }
   }
 }
+
+.article-breadcrumb--database-card {
+
+  .article-breadcrumb__list {
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+
+  .article-breadcrumb__item {
+    font-size: 18px;
+    line-height: 1.15;
+
+    a {
+      color: $color-primary;
+    }
+
+    &:not(:last-child)::after {
+      content: "/";
+      margin-left: 1px;
+      color: $color;
+    }
+
+    &--active {
+
+      a {
+        color: $color;
+      }
+    }
+  }
+}

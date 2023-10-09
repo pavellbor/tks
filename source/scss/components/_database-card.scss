@@ -1,0 +1,30 @@
+.database-card {
+    padding-top: 31px;
+    padding-bottom: 96px;
+}
+
+.database-card__header {
+    margin-bottom: 54px;
+}
+
+.database-card__content-table-row {
+    display: grid;
+    grid-template-columns: 191px 1fr;
+    align-content: center;
+    min-height: 42px;
+    border-top: 1px solid $color-divider;
+}
+
+.database-card__content-table-row:last-child {
+    border-bottom: 1px solid $color-divider;
+}
+
+.database-card__content-table-row .database-card__content-table-data:first-child {
+    padding-right: 10px;
+    font-weight: 700;
+}
+
+.database-card__content-table-data {
+    padding: 5px 0;
+    line-height: 1.4;
+}
