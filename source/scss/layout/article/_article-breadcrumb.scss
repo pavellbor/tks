@@ -118,6 +118,10 @@
 
       a {
         color: $color;
+
+        @media (min-width: $desktop-width) {
+          text-decoration: underline;
+        }
       }
     }
   }
