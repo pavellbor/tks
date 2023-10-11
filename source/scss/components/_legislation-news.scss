@@ -15,14 +15,21 @@
     font-weight: 700;
 }
 
+.legislation-news__filters-wrapper {
+  margin-bottom: 25px;
+}
+
 .legislation-news__filters {
     display: flex;
     flex-wrap: wrap;
     gap: 1px;
     margin: 0;
-    margin-bottom: 25px;
-    padding: 0;
+    padding: 0 $offset-x-mobile;
     list-style: none;
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
 }
 
 .legislation-news__filter {
@@ -33,14 +40,14 @@
 .legislation-news__filter--active {
     background-color: $color-primary;
     color: $color-bg-main;
+
+    .legislation-news__filter-link {
+        color: $color-bg-main;
+    }
 }
 
 .legislation-news__filter-link {
     color: $color-primary;
-}
-
-.legislation-news__filter-link--active {
-    color: $color-bg-main;
 }
 
 .legislation-news__list {

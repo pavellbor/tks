@@ -75,7 +75,7 @@
     }
 }
 
-.database__item .database__item-content {
+.database__item-content {
     margin: 0;
     margin-bottom: 19px;
     padding: 0;
@@ -83,11 +83,11 @@
     font-size: 12px;
     line-height: 1.6;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     @media (min-width: $desktop-width) {
         padding-right: 10px; 
     }
-}
-
-.database__item .database__item-content:last-child {
-    margin-bottom: 0;
 }

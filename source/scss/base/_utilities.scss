@@ -2,6 +2,10 @@
   white-space: nowrap !important;
 }
 
+.text-red {
+  color: $color-primary-red;
+}
+
 .outer-mobile {
   @media (max-width: $mobile-width) {
     margin-left: -$offset-x-mobile;
