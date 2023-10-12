@@ -70,9 +70,11 @@
 }
 
 .legislation-news__item-announce {
+    display: block;
     margin: 0;
     margin-bottom: 9px;
     padding: 0;
+    color: $color;
     line-height: 1.25;
 }
 
