@@ -37,6 +37,17 @@
   }
 }
 
+.periodicals-main__item-date {
+  margin-bottom: 3px;
+  font-size: 12px;
+  color: $color-light-gray;
+  line-height: 1.4;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 5px;
+  }
+}
+
 .periodicals-main__item-link {
   color: inherit;
 }
