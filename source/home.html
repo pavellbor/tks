@@ -18,24 +18,22 @@
                     <div class="home-intro__main-news">
                         <div class="tab-content">
                             <div class="tab-panel">
-                                <div class="tab-panel__title">
-                                    <a href="#">
-                                        Правительство ввело ограничения на экспорт бензина
-                                    </a>
-                                </div>
+                                <a class="tab-panel__title" href="#">
+                                    Правительство ввело ограничения на экспорт бензина
+                                </a>
                                 <time class="tab-panel__date" datetime="2023-10-12">Cегодня</time>
-                                <img class="tab-panel__image" src="/img/home-1-demo.webp" width="225" height="168"
-                                    alt="Превью к статье">
-                                <div class="tab-panel__desc">
-                                    <a href="#">
+                                <div class="tab-panel__desc-wrapper">
+                                    <a class="tab-panel__desc" href="#">
                                         Правительство России ввело временные ограничения на экспорт автомобильного
                                         бензина и
                                         дизельного топлива.
                                     </a>
+                                    <img class="tab-panel__image" src="/img/home-1-demo.webp" width="225" height="168"
+                                        alt="Превью к статье">
                                 </div>
                             </div>
                         </div>
-                        <ul class="nav-tabs">
+                        <ul class="nav-tabs swiper inner-mobile">
                             <li class="nav-tabs__item nav-tabs__item--active">
                                 <a href="#">
                                     Правительство ввело ограничения на экспорт бензина
@@ -55,7 +53,9 @@
                     </div>
                     <div class="home-intro__aside">
                         <div class="panel panel--gray">
-                            <div class="panel__title">Наш телефон</div>
+                            <div class="panel__header">
+                                <div class="panel__title">Наш телефон</div>
+                            </div>
                             <div class="panel__body">
                                 <div class="home-phone">
                                     <div class="home-phone__number">+7 (812) 339-89-77</div>
@@ -69,7 +69,9 @@
                             </div>
                         </div>
                         <div class="panel panel--gray">
-                            <div class="panel__title">График работы</div>
+                            <div class="panel__header">
+                                <div class="panel__title">График работы</div>
+                            </div>
                             <div class="panel__body">
                                 <div class="home-schedule">
                                     Все отделы по рабочим дням:<br>
@@ -85,199 +87,202 @@
                     </div>
                 </div>
 
-                <div class="home__content content">
-                    <div class="content__title">Новости таможни</div>
-                    <ul class="content__news-list">
-                        <li class="content__news-item">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                <div class="home__content home-content">
+                    <div class="home-content__title">Новости таможни</div>
+                    <ul class="home-content__news-list">
+                        <li class="home-content__news-item">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     Эксперт считает, что введение экспортных пошлин поможет стабилизации рубля
                                 </div>
-                                <img class="content__news-item-image" src="/img/home-2-demo.webp" width="210"
+                                <img class="home-content__news-item-image" src="/img/home-2-demo.webp" width="210"
                                     height="165" alt="Превью к статье">
                             </a>
                         </li>
-                        <li class="content__news-item content__news-item--important">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item home-content__news-item--important">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     Правительство ввело ограничения на экспорт бензина
                                 </div>
                             </a>
                         </li>
-                        <li class="content__news-item">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     Виктор Назаренко: "Цифровое техническое регулирование – ответственное направление
                                     евразийской интеграции, которое всеми рассматривается сквозь увеличительное стекло"
                                 </div>
                             </a>
                         </li>
-                        <li class="content__news-item content__news-item--important">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item home-content__news-item--important">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     На площадке ЕЭК продолжилось обсуждение новой формы таможенной декларации
                                 </div>
-                                <img class="content__news-item-image" src="/img/home-3-demo.webp" width="210"
+                                <img class="home-content__news-item-image" src="/img/home-3-demo.webp" width="210"
                                     height="165" alt="Превью к статье">
                             </a>
                         </li>
-                        <li class="content__news-item">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     Минск продлил лицензирование экспорта льноволокна на полгода
                                 </div>
                             </a>
                         </li>
 
-                        <li class="content__news-item content__news-item--important">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item home-content__news-item--important">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     Правительство обсуждает меры по усилению валютного контроля
                                 </div>
-                                <img class="content__news-item-image" src="/img/home-4-demo.webp" width="210"
+                                <img class="home-content__news-item-image" src="/img/home-4-demo.webp" width="210"
                                     height="165" alt="Превью к статье">
                             </a>
                         </li>
-                        <li class="content__news-item content__news-item--important">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item home-content__news-item--important">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     В Минфине заявили, что цифровой рубль пока не предназначен для внешнеторговых
                                     расчетов
                                 </div>
                             </a>
                         </li>
-                        <li class="content__news-item">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     Минфин готовит меры по контролю оттока капитала через дружественные страны
                                 </div>
                             </a>
                         </li>
-                        <li class="content__news-item content__news-item--important">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item home-content__news-item--important">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     В правительстве предложили изъять "курсовую ренту" у экспортеров
                                 </div>
                             </a>
                         </li>
-                        <li class="content__news-item">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     В ЦБ заявили, что ставка в 8,5% привела бы к "хорошо трехзначному" обменному курсу
                                 </div>
                             </a>
                         </li>
-                        <li class="content__news-item content__news-item--important">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item home-content__news-item--important">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     В ЦБ выступили против предложений Минфина по валютному контролю
                                 </div>
                             </a>
                         </li>
-                        <li class="content__news-item">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     Правительство обсуждает меры по усилению валютного контроля
                                 </div>
-                                <img class="content__news-item-image" src="/img/home-5-demo.webp" width="210"
+                                <img class="home-content__news-item-image" src="/img/home-5-demo.webp" width="210"
                                     height="165" alt="Превью к статье">
                             </a>
                         </li>
 
-                        <li class="content__news-item">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     Эксперт считает, что введение экспортных пошлин поможет стабилизации рубля
                                 </div>
-                                <img class="content__news-item-image" src="/img/home-2-demo.webp" width="210"
+                                <img class="home-content__news-item-image" src="/img/home-2-demo.webp" width="210"
                                     height="165" alt="Превью к статье">
                             </a>
                         </li>
-                        <li class="content__news-item content__news-item--important">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item home-content__news-item--important">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     Правительство ввело ограничения на экспорт бензина
                                 </div>
                             </a>
                         </li>
-                        <li class="content__news-item">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     Виктор Назаренко: "Цифровое техническое регулирование – ответственное направление
                                     евразийской интеграции, которое всеми рассматривается сквозь увеличительное стекло"
                                 </div>
                             </a>
                         </li>
-                        <li class="content__news-item content__news-item--important">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item home-content__news-item--important">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     На площадке ЕЭК продолжилось обсуждение новой формы таможенной декларации
                                 </div>
-                                <img class="content__news-item-image" src="/img/home-3-demo.webp" width="210"
+                                <img class="home-content__news-item-image" src="/img/home-3-demo.webp" width="210"
                                     height="165" alt="Превью к статье">
                             </a>
                         </li>
-                        <li class="content__news-item">
-                            <time class="content__news-item-date" datetime="2023-11-10">10.11</time>
-                            <a class="content__news-item-link">
-                                <div class="content__news-item-desc">
+                        <li class="home-content__news-item">
+                            <time class="home-content__news-item-date" datetime="2023-11-10">10.11</time>
+                            <a class="home-content__news-item-link" href="#">
+                                <div class="home-content__news-item-desc">
                                     Минск продлил лицензирование экспорта льноволокна на полгода
                                 </div>
                             </a>
                         </li>
                     </ul>
-                    <a class="content__link periodicals-hot__link">Показать больше</a>
+                    <a class="home-content__link periodicals-hot__link" href="#">Показать больше</a>
                 </div>
-                <div class="home__other-content other-content">
-                    <ul class="other-content__list">
-                        <li class="other-content__item">
-                            <div class="other-content__item-date">
+
+
+
+                <div class="home__other-content home-other-content">
+                    <ul class="home-other-content__list">
+                        <li class="home-other-content__item">
+                            <div class="home-other-content__item-date">
                                 <time datetime="2023-09-14">14.09</time>
                             </div>
-                            <ul class="other-content__item-list">
-                                <li class="other-content__item-announce">
+                            <ul class="home-other-content__item-list">
+                                <li class="home-other-content__item-announce">
                                     <a href="#">"Аэрофлот" и Минтранс занялись вопросом снятия запрета на "мокрый"
                                         лизинг</a>
                                 </li>
-                                <li class="other-content__item-announce">
+                                <li class="home-other-content__item-announce">
                                     <a href="#">Чекунков: грузопоток Севморпути достигнет рекордных 200 млн тонн к 2030
                                         году</a>
                                 </li>
-                                <li class="other-content__item-announce">
+                                <li class="home-other-content__item-announce">
                                     <a href="#">ГК "Дело" рассматривает возможность формирования контейнерного хаба в
                                         Астрахани</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class="other-content__item">
-                            <div class="other-content__item-date">
+                        <li class="home-other-content__item">
+                            <div class="home-other-content__item-date">
                                 <time datetime="2023-09-13">13.09</time>
                             </div>
-                            <ul class="other-content__item-list">
-                                <li class="other-content__item-announce">
+                            <ul class="home-other-content__item-list">
+                                <li class="home-other-content__item-announce">
                                     <a href="#">Арзыбек Кожошев: "Страны ЕАЭС принимают активное участие в глобальном
                                         процессе изменений транспортной логистики"</a>
                                 </li>
-                                <li class="other-content__item-announce">
+                                <li class="home-other-content__item-announce">
                                     <a href="#">РЖД увеличили весовые нормы станции Ванино на востоке БАМа</a>
                                 </li>
-                                <li class="other-content__item-announce">
+                                <li class="home-other-content__item-announce">
                                     <a href="#">Индия и Россия стремятся начать доставку грузов по восточному морскому
                                         коридору</a>
                                 </li>
@@ -288,8 +293,10 @@
             </div>
         </main>
         <aside class="page-aside">
-            <div class="panel">
-                <div class="panel__title">Обучение и семинары</div>
+            <div class="panel panel--with-divider">
+                <div class="panel__header">
+                    <div class="panel__title">Обучение и семинары</div>
+                </div>
                 <div class="panel__body">
                     <div class="home-education">
                         <ul class="home-education__list">
@@ -307,8 +314,10 @@
                     </div>
                 </div>
             </div>
-            <div class="panel">
-                <div class="panel__title">Расчёт для ввоза</div>
+            <div class="panel panel--with-divider">
+                <div class="panel__header">
+                    <div class="panel__title">Расчёт для ввоза</div>
+                </div>
                 <div class="panel__body">
                     <div class="home-import-calculation">
                         <ul class="home-import-calculation__list">
@@ -341,14 +350,13 @@
 
             @@include('./partials/_authors-shorts.html')
 
-            <div class="panel">
-                <div class="panel__title">Туристам</div>
+            <div class="panel panel--with-image">
+                <div class="panel__header">
+                    <div class="panel__title">Туристам</div>
+                    <img class="panel__image" src="/img/home-tourists.webp" width="38" height="38" alt="Иконка калькулятора для туристов">
+                </div>
                 <div class="panel__body">
                     <div class="home-tourists">
-                        <div class="home-tourists__header">
-                            <img class="ourists__header-image" src="/img/home-tourists.webp" width="38" height="38"
-                                alt="Иконка калькулятора для туристов">
-                        </div>
                         <ul class="home-tourists__list">
                             <li class="home-tourists__item">
                                 <a href="#">Ввоз-вывоз товаров</a>
@@ -367,14 +375,12 @@
                 </div>
             </div>
             <div class="panel">
-                <div class="panel__title">ТН ВЭД ЕАЭС</div>
+                <div class="panel__title panel__title--with-divider">ТН ВЭД ЕАЭС</div>
                 <div class="panel__body">
                     <div class="home-code">
                         <form class="home-code__form" method="get">
                             <input type="text" placeholder="Поиск ТН ВЭД">
-                            <button>
-                                <img src="/img/home-code.webp" width="38" height="28" alt="Иконка поиска">
-                            </button>
+                            <button></button>
                         </form>
                         <div class="home-code__desc">
                             Введите код по ТН ВЭД или наименование товара, чтобы получить справку по таможенным пошлинам
@@ -383,7 +389,7 @@
                     </div>
                 </div>
             </div>
-            <div class="panel">
+            <div class="panel panel--with-divider">
                 <div class="panel__title">Курсы валют</div>
                 <div class="panel__body">
                     <div class="home-currencies">
@@ -416,7 +422,7 @@
                     </div>
                 </div>
             </div>
-            <div class="panel">
+            <div class="panel panel--with-divider">
                 <div class="panel__title">Рассылка</div>
                 <div class="panel__body">
                     <div class="home-mailing">
@@ -430,11 +436,11 @@
                     </div>
                 </div>
             </div>
-            <div class="panel">
+            <div class="panel panel--with-divider">
                 <div class="panel__title">Темы материалов</div>
                 <div class="panel__body">
-                    <div class="material-topics">
-                        <div class="material-topics__links">
+                    <div class="home-material-topics">
+                        <div class="home-material-topics__links">
                             <a href="#">Авиация</a>
                             <a href="#">Автопром</a>
                             <a href="#">Административные правонарушения</a>
@@ -449,28 +455,29 @@
                     </div>
                 </div>
             </div>
-            <div class="panel">
+            <div class="panel panel--with-divider">
                 <div class="panel__title">Форум</div>
                 <div class="panel__body">
-                    <div class="forum">
-                        <ul class="forum__list">
-                            <li class="forum__item forum__item--active">
+                    <div class="home-forum">
+                        <ul class="home-forum__list">
+                            <li class="home-forum__item">
                                 <a href="#">ВОЗДУХ!!!</a>
                                 <span>+1</span>
                             </li>
-                            <li class="forum__item">
+                            <li class="home-forum__item">
                                 <a href="#">Ну что товарищи, как быть то.</a>
                                 <span>+1</span>
                             </li>
-                            <li class="forum__item">
+                            <li class="home-forum__item">
                                 <a href="#">Порядок действий при процедуре Реэкспорта</a>
                                 <span>+2</span>
                             </li>
-                            <li class="forum__item">
-                                <a href="#">Информация, переданная по электронным каналам связи, подлежит декларированию</a>
+                            <li class="home-forum__item">
+                                <a href="#">Информация, переданная по электронным каналам связи, подлежит
+                                    декларированию</a>
                                 <span>+12</span>
                             </li>
-                            <li class="forum__item">
+                            <li class="home-forum__item home-forum__item--active">
                                 <a href="#">Критические дни экспорта</a>
                                 <span>+113</span>
                             </li>

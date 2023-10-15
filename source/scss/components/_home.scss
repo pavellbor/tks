@@ -1,0 +1,151 @@
+.home-intro {
+    display: flex;
+    flex-direction: column;
+    padding-top: 18px;
+}
+
+.home-intro__aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-phone__number {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: $color-dark-gray;
+    line-height: 1.172;
+}
+
+.home-phone__links a {
+    margin-right: 10px;
+    font-weight: 700;
+    color: $color-primary-dark;
+    line-height: 1.4;
+}
+
+.home-schedule {
+    font-size: 12px;
+    line-height: 1.4;
+    color: $color-dark-gray;
+}
+
+.home-schedule a {
+    font-size: 12px;
+    font-weight: 700;
+    color: $color-primary-dark;
+}
+
+.home-education__list,
+.home-import-calculation__list,
+.home-tourists__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.home-code__form {
+    margin-bottom: 22px;
+
+    button {
+        width: 38px;
+        background-image: url(/img/home-code.webp);
+    }
+}
+
+.home-code__desc {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.home-currencies__list {
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+    padding-top: 5px;
+    list-style: none;
+}
+
+.home-currencies__item {
+    font-size: 13px;
+    line-height: 1.171;
+}
+
+.home-currencies__item-title {
+    font-size: 12px;
+}
+
+.home-currencies__item-value {
+    margin-bottom: 7px;
+    font-size: 23px;
+    line-height: 1.172;
+
+    sup {
+        top: -0.8em;
+        right: -0.3em;
+        font-size: 13px;
+    }
+}
+
+.home-mailing__cta {
+    margin-bottom: 7px;
+    padding-top: 6px;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.home-mailing__form {
+
+    button {
+        color: $color-primary-dark;
+        background-color: inherit;
+    }
+}
+
+.home-material-topics__links a {
+    margin-right: 7px;
+}
+
+.home-forum__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.home-forum__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 7px;
+
+    a {
+        align-self: center;
+        line-height: 1.171;
+    }
+
+    span {
+        padding: 2px 5px 1px 5px;
+        font-size: 12px;
+        font-weight: 700;
+        color: $color-primary-dark;
+        line-height: 1.171;
+        background-color: $color-bg-disabled;
+        border-radius: 5px;
+    }
+}
+
+.home-forum__item--active {
+    a {
+        align-self: center;
+        line-height: 1.171;
+    }
+
+    span {
+        color: $color-bg-main;
+        background-color: $color-primary-dark;
+    }
+}

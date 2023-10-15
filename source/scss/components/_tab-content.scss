@@ -1,0 +1,36 @@
+.tab-panel__title {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: $color;
+    line-height: 1.08;
+}
+
+.tab-panel__date {
+    display: block;
+    margin-bottom: 7px;
+    padding: 7px 0;
+    font-size: 12px;
+    color: $color-light-gray;
+    line-height: 1.17;
+}
+
+.tab-panel__desc-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    margin-bottom: 17px;
+}
+
+.tab-panel__image {
+    width: 345px;
+    height: 198px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.tab-panel__desc {
+    color: $color;
+    line-height: 1.4;
+}
