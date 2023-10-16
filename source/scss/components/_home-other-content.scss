@@ -1,13 +1,16 @@
 .home-other-content {
     display: none;
-    
     max-width: 465px;
+    
+    @media (min-width: $desktop-width) {
+        display: block;
+    }
 }
 
 .home-other-content__list {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 5px;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -29,14 +32,15 @@
 .home-other-content__item-list {
     display: flex;
     flex-direction: column;
-    gap: 7px;
+    gap: 2px;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
 .home-other-content__item-announce a {
+    display: block;
     font-size: 12px;
     color: $color;
-    line-height: 1.25;
+    line-height: 1.45;
 }

@@ -21,6 +21,12 @@
     flex-direction: column-reverse;
     gap: 10px;
     margin-bottom: 17px;
+
+    @media (min-width: $desktop-width) {
+        flex-direction: row;
+        gap: 12px;
+        margin-bottom: 36px;
+    }
 }
 
 .tab-panel__image {
@@ -28,6 +34,11 @@
     height: 198px;
     object-fit: cover;
     object-position: center;
+
+    @media (min-width: $desktop-width) {
+        width: 225px;
+        height: 168px;
+    }
 }
 
 .tab-panel__desc {

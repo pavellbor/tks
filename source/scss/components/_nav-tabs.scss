@@ -3,16 +3,24 @@
     flex-wrap: wrap;
     gap: 15px;
     margin: 0;
-    margin-right: -$offset-x-mobile;
     margin-bottom: 15px;
-    padding: 0;
     list-style: none;
+    
+    @media (min-width: $desktop-width) {
+        gap: 20px;
+        width: 100%;
+        padding: 0;
+    }
 }
 
 .nav-tabs__item {
     max-width: 138px;
     padding-top: 10px;
     border-top: 1px solid $color-primary-light;
+
+    @media (min-width: $desktop-width) {
+        max-width: 143px;
+    }
 }
 
 .nav-tabs__item:not(.nav-tabs__item--active):hover {

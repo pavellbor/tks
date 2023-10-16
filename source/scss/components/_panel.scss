@@ -14,9 +14,13 @@
     padding: 10px;
     background-color: $color-divider;
 
+    @media (min-width: $desktop-width) {
+        padding: 15px;
+    }
+
     .panel__title {
         margin: 0;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         padding: 0;
         font-weight: 700;
         color: $color-primary-red;
@@ -31,12 +35,26 @@
 
 .panel--with-divider {
     border-top: 1px solid $color-divider;
+
+    &:last-child {
+        border-bottom: 1px solid $color-divider;
+    }
+}
+
+.panel--ads {
+    padding-bottom: 22px;
+    border-bottom: 1px solid $color-divider;
+}
+
+.panel--ads + .panel--ads {
+    border-top: none;
 }
 
 .panel--with-image {
     .panel__header {
         display: flex;
         justify-content: space-between;
+        gap: 5px;
     }
 }
 
