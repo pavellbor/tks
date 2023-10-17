@@ -391,30 +391,6 @@
       text-align: center;
     }
 
-    .custom-table__heading:first-child {
-      position: relative;
-    }
-
-    .custom-table__heading:first-child::before {
-      content: "";
-      position: absolute;
-      top: -7px;
-      left: -97px;
-      width: 193px;
-      height: 1px;
-      background-color: $color-bg-main;
-    }
-
-    .custom-table__heading:first-child::after {
-      content: "";
-      position: absolute;
-      top: 21px;
-      left: -97px;
-      width: 193px;
-      height: 1px;
-      background-color: $color-bg-main;
-    }
-
     .custom-table__col {
       display: table-cell;
       padding-top: 7px;

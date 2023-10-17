@@ -4,6 +4,13 @@
 
   @media (min-width: $desktop-width) {
     margin-right: -5px;
-    padding-top: 104px;
+  }
+}
+
+.page-aside__ads {
+  @media (min-width: $desktop-width) {
+    &:empty {
+      height: 104px;
+    }
   }
 }
