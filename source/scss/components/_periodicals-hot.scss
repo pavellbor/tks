@@ -64,6 +64,10 @@
     flex-direction: column;
     gap: 7px;
   }
+
+  &:hover .periodicals-hot__item-title {
+    color: $color-primary-dark;
+  }
 }
 
 .periodicals-hot__item-title {

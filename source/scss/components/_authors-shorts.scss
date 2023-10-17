@@ -31,6 +31,10 @@
     margin-bottom: 4px;
     line-height: 1.4;
     color: inherit;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .authors-shorts__item-image {
@@ -43,4 +47,8 @@
     font-size: 12px;
     line-height: 1;
     color: $color-light-gray;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }

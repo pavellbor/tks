@@ -86,7 +86,6 @@
     input {
         width: 100%;
         padding-left: 12px;
-        padding-right: 10px;
         border: none;
     }
 
@@ -94,6 +93,17 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-color: $color-bg-main;
         border: none;
     }
+}
+
+.panel__form-button-wrapper {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    top: 0;
+    right: 0;
+    width: auto;
 }

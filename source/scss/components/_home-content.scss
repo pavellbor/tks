@@ -68,6 +68,10 @@
     }
 }
 
+.home-content__news-item-desc:hover {
+    text-decoration: underline;
+}
+
 .home-content__news-item-image {
     flex-shrink: 0;
     width: 130px;
