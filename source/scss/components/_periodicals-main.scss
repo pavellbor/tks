@@ -51,7 +51,7 @@
 .periodicals-main__item-link {
   color: inherit;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) and (hover:hover) {
     &:hover .periodicals-main__item-title {
       color: $color-primary-dark;
     }

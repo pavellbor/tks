@@ -16,7 +16,7 @@
   }
 
   &:not(:last-child)::after {
-    content: "/";
+    content: '/';
     margin-left: 1px;
     color: rgba(0, 0, 0, 0.45);
   }
@@ -29,7 +29,7 @@
     }
 
     &:not(:last-child)::after {
-      content: "/";
+      content: '/';
       margin-left: 1px;
       color: $color;
     }
@@ -39,18 +39,21 @@
     }
   }
 
-  .article-breadcrumb__item:hover a {
-    font-weight: 400;
-    text-decoration: underline;
+  @media (hover: hover) {
+    .article-breadcrumb__item:hover a {
+      font-weight: 400;
+      text-decoration: underline;
+    }
   }
 
-  .article-breadcrumb__item:last-child:hover a {
-    text-decoration: none;
+  @media (hover: hover) {
+    .article-breadcrumb__item:last-child:hover a {
+      text-decoration: none;
+    }
   }
 }
 
 .article-breadcrumb--legislation-news-item {
-  
   .article-breadcrumb__list {
     flex-wrap: wrap;
     column-gap: 7px;
@@ -65,7 +68,7 @@
     }
 
     &:not(:last-child)::after {
-      content: "/";
+      content: '/';
       margin-left: 1px;
       color: $color;
     }
@@ -75,13 +78,15 @@
     }
   }
 
-  .article-breadcrumb__item:hover a {
-    font-weight: 400;
-    text-decoration: underline;
-  }
-
-  .article-breadcrumb__item:last-child:hover a {
-    text-decoration: none;
+  @media (hover: hover) {
+    .article-breadcrumb__item:hover a {
+      font-weight: 400;
+      text-decoration: underline;
+    }
+    
+    .article-breadcrumb__item:last-child:hover a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -99,7 +104,7 @@
     }
 
     &:not(:last-child)::after {
-      content: "/";
+      content: '/';
       margin-left: 1px;
       color: $color;
     }
@@ -109,18 +114,19 @@
     }
   }
 
-  .article-breadcrumb__item:hover a {
-    font-weight: 400;
-    text-decoration: underline;
-  }
+  @media (hover: hover) {
+    .article-breadcrumb__item:hover a {
+      font-weight: 400;
+      text-decoration: underline;
+    }
 
-  .article-breadcrumb__item:last-child:hover a {
-    text-decoration: none;
+    .article-breadcrumb__item:last-child:hover a {
+      text-decoration: none;
+    }
   }
 }
 
 .article-breadcrumb--database-card {
-
   .article-breadcrumb__list {
     gap: 4px;
     flex-wrap: wrap;
@@ -136,13 +142,12 @@
     }
 
     &:not(:last-child)::after {
-      content: "/";
+      content: '/';
       margin-left: 1px;
       color: $color;
     }
 
     &--active {
-
       a {
         color: $color;
 
@@ -153,8 +158,9 @@
     }
   }
 
-  .article-breadcrumb__item:hover a {
-    font-weight: 400;
-    // text-decoration: underline;
+  @media (hover: hover) {
+    .article-breadcrumb__item:hover a {
+      font-weight: 400;
+    }
   }
 }

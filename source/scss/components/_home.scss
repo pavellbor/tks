@@ -42,10 +42,12 @@
     color: $color-primary-dark;
     line-height: 1.4;
 
-    &:hover {
-        font-weight: 700;
-        color: $color;
-        text-decoration: underline;
+    @media (hover:hover) {
+        &:hover {
+            font-weight: 700;
+            color: $color;
+            text-decoration: underline;
+        }
     }
 }
 
@@ -60,10 +62,12 @@
     font-weight: 700;
     color: $color-primary-dark;
 
-    &:hover {
-        font-weight: 700;
-        color: $color;
-        text-decoration: underline;
+    @media (hover:hover) {
+        &:hover {
+            font-weight: 700;
+            color: $color;
+            text-decoration: underline;
+        }
     }
 }
 

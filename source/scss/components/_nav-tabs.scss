@@ -23,12 +23,14 @@
     }
 }
 
-.nav-tabs__item:not(.nav-tabs__item--active):hover {
-    padding-top: 7px;
-    border-top: 4px solid $color-primary-light;
+@media (hover:hover) {
+    .nav-tabs__item:not(.nav-tabs__item--active):hover {
+        padding-top: 7px;
+        border-top: 4px solid $color-primary-light;
 
-    span {
-        font-weight: 400;
+        span {
+            font-weight: 400;
+        }
     }
 }
 
@@ -37,9 +39,11 @@
     border-top: 4px solid $color-primary-dark;
 }
 
-.nav-tabs__item--active:hover {
-    span {
-        font-weight: 400;
+@media (hover:hover) {
+    .nav-tabs__item--active:hover {
+        span {
+            font-weight: 400;
+        }
     }
 }
 

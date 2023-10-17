@@ -44,8 +44,10 @@
     color: $color;
     line-height: 1.45;
 
-    &:hover {
-        font-weight: 400;
-        text-decoration: underline;
+    @media (hover:hover) {
+        &:hover {
+            font-weight: 400;
+            text-decoration: underline;
+        }
     }
 }

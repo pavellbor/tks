@@ -65,8 +65,10 @@
     gap: 7px;
   }
 
-  &:hover .periodicals-hot__item-title {
-    color: $color-primary-dark;
+  @media (hover:hover) {
+    &:hover .periodicals-hot__item-title {
+      color: $color-primary-dark;
+    }
   }
 }
 
