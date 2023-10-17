@@ -3,6 +3,7 @@
 
 <head>
     @@include('./partials/_head.html')
+    <script src="/js/tabs.js"></script>
 </head>
 
 <body>
@@ -17,7 +18,7 @@
                 <div class="home__intro home-intro">
                     <div class="home-intro__main-news">
                         <div class="tab-content">
-                            <div class="tab-panel">
+                            <div class="tab-panel" data-tab-number="1">
                                 <a class="tab-panel__title" href="#">
                                     Правительство ввело ограничения на экспорт бензина
                                 </a>
@@ -32,20 +33,50 @@
                                         alt="Превью к статье">
                                 </div>
                             </div>
+                            <div class="tab-panel tab-panel--hidden" data-tab-number="2">
+                                <a class="tab-panel__title" href="#">
+                                    В ЦБ выступили против предложений Минфина по валютному контролю
+                                </a>
+                                <time class="tab-panel__date" datetime="2023-10-12">Cегодня</time>
+                                <div class="tab-panel__desc-wrapper">
+                                    <a class="tab-panel__desc" href="#">
+                                        НОВЫЙ ТЕКСТ 2. Правительство России ввело временные ограничения на экспорт автомобильного
+                                        бензина и
+                                        дизельного топлива.
+                                    </a>
+                                    <img class="tab-panel__image" src="/img/home-1-demo.webp" width="225" height="168"
+                                        alt="Превью к статье">
+                                </div>
+                            </div>
+                            <div class="tab-panel tab-panel--hidden" data-tab-number="3">
+                                <a class="tab-panel__title" href="#">
+                                    Госдума одобрила в I чтении законопроект о точечной настройке регулирования экспорта
+                                </a>
+                                <time class="tab-panel__date" datetime="2023-10-12">Cегодня</time>
+                                <div class="tab-panel__desc-wrapper">
+                                    <a class="tab-panel__desc" href="#">
+                                        НОВЫЙ ТЕКСТ 3. Правительство России ввело временные ограничения на экспорт автомобильного
+                                        бензина и
+                                        дизельного топлива.
+                                    </a>
+                                    <img class="tab-panel__image" src="/img/home-1-demo.webp" width="225" height="168"
+                                        alt="Превью к статье">
+                                </div>
+                            </div>
                         </div>
                         <div class="outer-mobile">
                             <ul class="nav-tabs swiper inner-mobile">
-                                <li class="nav-tabs__item nav-tabs__item--active">
+                                <li class="nav-tabs__item nav-tabs__item--active" data-nav-number="1">
                                     <a href="#">
                                         Правительство ввело ограничения на экспорт бензина
                                     </a>
                                 </li>
-                                <li class="nav-tabs__item">
+                                <li class="nav-tabs__item" data-nav-number="2">
                                     <a href="#">
                                         В ЦБ выступили против предложений Минфина по валютному контролю
                                     </a>
                                 </li>
-                                <li class="nav-tabs__item">
+                                <li class="nav-tabs__item" data-nav-number="3">
                                     <a href="#">
                                         Госдума одобрила в I чтении законопроект о точечной настройке регулирования экспорта
                                     </a>
