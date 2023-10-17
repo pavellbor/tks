@@ -3,7 +3,6 @@
 
 <head>
     @@include('./partials/_head.html')
-    <script src="/js/tabs.js"></script>
 </head>
 
 <body>
@@ -15,10 +14,10 @@
             @@include('./partials/_additional-nav.html')
 
             <div class="home">
-                <div class="home__intro home-intro">
+                <div class="home__intro home-intro" data-tabs>
                     <div class="home-intro__main-news">
                         <div class="tab-content">
-                            <div class="tab-panel" data-tab-number="1">
+                            <div class="tab-panel" data-tabs-panel="1">
                                 <a class="tab-panel__title" href="#">
                                     Правительство ввело ограничения на экспорт бензина
                                 </a>
@@ -33,7 +32,7 @@
                                         alt="Превью к статье">
                                 </div>
                             </div>
-                            <div class="tab-panel tab-panel--hidden" data-tab-number="2">
+                            <div class="tab-panel tab-panel--hidden" data-tabs-panel="2">
                                 <a class="tab-panel__title" href="#">
                                     В ЦБ выступили против предложений Минфина по валютному контролю
                                 </a>
@@ -48,7 +47,7 @@
                                         alt="Превью к статье">
                                 </div>
                             </div>
-                            <div class="tab-panel tab-panel--hidden" data-tab-number="3">
+                            <div class="tab-panel tab-panel--hidden" data-tabs-panel="3">
                                 <a class="tab-panel__title" href="#">
                                     Госдума одобрила в I чтении законопроект о точечной настройке регулирования экспорта
                                 </a>
@@ -66,17 +65,17 @@
                         </div>
                         <div class="outer-mobile">
                             <ul class="nav-tabs swiper inner-mobile">
-                                <li class="nav-tabs__item nav-tabs__item--active" data-nav-number="1">
+                                <li class="nav-tabs__item nav-tabs__item--active" data-tabs-nav="1">
                                     <a href="#">
                                         Правительство ввело ограничения на экспорт бензина
                                     </a>
                                 </li>
-                                <li class="nav-tabs__item" data-nav-number="2">
+                                <li class="nav-tabs__item" data-tabs-nav="2">
                                     <a href="#">
                                         В ЦБ выступили против предложений Минфина по валютному контролю
                                     </a>
                                 </li>
-                                <li class="nav-tabs__item" data-nav-number="3">
+                                <li class="nav-tabs__item" data-tabs-nav="3">
                                     <a href="#">
                                         Госдума одобрила в I чтении законопроект о точечной настройке регулирования экспорта
                                     </a>
