@@ -1,0 +1,16 @@
+.control-btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: url(../img/stack.svg#arrow-right);
+    border: 1px solid $color-light-gray;
+    border-radius: 50%;
+
+    @media (min-width: $desktop-width) {
+        width: 32px;
+        height: 32px;
+    }
+}

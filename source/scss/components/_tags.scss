@@ -1,0 +1,29 @@
+.tags {
+    @media (min-width: $desktop-width) {
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.tags__title {
+    margin: 0;
+    margin-bottom: 8px;
+    padding: 0;
+    color: $color-light-gray;
+}
+
+.tags__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 8px;
+    margin-bottom: 44px;
+
+    @media (min-width: $desktop-width) {
+        margin-bottom: 34px;
+    }
+
+    a {
+        color: $color-primary;
+    }
+}

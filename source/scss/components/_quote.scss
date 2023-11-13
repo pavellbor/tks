@@ -1,0 +1,41 @@
+.quote {
+    padding: 0 12px;
+    border-left: 3px solid $color-primary-dark;
+
+    @media (min-width: $desktop-width) {
+        padding-top: 4px;
+    }
+}
+
+.quote__text {
+    margin: 0;
+    margin-bottom: 12px;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.4;
+    color: $color-dark-gray;
+}
+
+.quote__author-wrapper {
+    display: flex;
+    gap: 8px;
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+.quote__author {
+    display: flex;
+    flex-direction: column;
+
+    span {
+        color: $color-light-gray;
+    }
+
+    a {
+        font-weight: 700;
+        color: $color-primary;
+    }
+}

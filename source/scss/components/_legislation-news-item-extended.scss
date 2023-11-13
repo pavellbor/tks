@@ -1,0 +1,191 @@
+.legislation-news-item--extended {
+    padding-top: 23px;
+
+    .legislation-news-item__header {
+        margin-bottom: 10px;
+    }
+
+    .legislation-news-item__info {
+        font-size: 12px;
+
+        @media (min-width: $desktop-width) {
+            margin-left: 10px;
+        }
+    }
+
+    .legislation-news-item__date {
+        @media (min-width: $desktop-width) {
+            margin-right: 0;
+        }
+    }
+
+    .legislation-news-item__title {
+        margin: 0;
+        margin-bottom: 5px;
+        padding: 0;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 1.15;
+        color: $color-dark-gray;
+    }
+
+    .legislation-news-item__offer-link {
+        display: block;
+        margin-bottom: 15px;
+        color: $color-primary-dark;
+        font-size: 12px;
+        line-height: 1.17;
+
+        @media (min-width: $desktop-width) {
+            margin-bottom: 23px;
+        }
+    }
+
+    .legislation-news-item__content-image {
+        float: left;
+        width: 270px;
+        height: 201px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        object-fit: cover;
+        object-position: center;
+
+        @media (max-width: $mobile-width) {
+            width: 345px;
+            height: 194px;
+        }
+    }
+
+    .legislation-news-item__content p {
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 0;
+        line-height: 1.4;
+        color: $color-dark-gray;
+
+        @media (min-width: $desktop-width) {
+            margin-bottom: 22px;
+        }
+    }
+
+    .legislation-news-item__quote {
+        margin-bottom: 7px;
+    }
+
+    .legislation-news-item__source {
+        color: $color-dark-gray;
+
+        &--mobile {
+            margin-bottom: 5px;
+            @media (min-width: $desktop-width) {
+                display: none;
+            }
+        }
+
+        &--desktop {
+            display: none;
+            margin-bottom: 0;
+
+            @media (min-width: $desktop-width) {
+                display: block;
+            }
+        }
+
+        &:last-child {
+            margin-bottom: 10px;
+
+            @media (min-width: $desktop-width) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .legislation-news-item__control-btns {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $color-divider;
+
+        @media (min-width: $desktop-width) {
+            justify-content: space-between;
+        }
+    }
+
+    .legislation-news-item__control-btns-wrapper {
+        display: contents;
+
+        @media (min-width: $desktop-width) {
+            display: flex;
+            gap: 10px;
+        }
+    }
+
+    .legislation-news-item__control-btn {
+        &--left {
+            order: -1;
+            transform: rotate(180deg);
+        }
+    }
+
+    .legislation-news-item__discuss-btn {
+        flex-grow: 1;
+
+        @media (min-width: $desktop-width) {
+            order: -1;
+            flex-grow: 0;
+        }
+    }
+
+    .legislation-news-item__sources-social-wrapper {
+        display: contents;
+
+        @media (min-width: $desktop-width) {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 7px;
+        }
+    }
+
+    .legislation-news-item__sources {
+        display: flex;
+        flex-direction: column;
+        color: $color-dark-gray;
+
+        @media (min-width: $desktop-width) {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: $color-light-gray;
+
+            @media (min-width: $desktop-width) {
+                color: $color;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .legislation-news-item__social {
+        margin-bottom: 20px;
+        
+        @media (min-width: $desktop-width) {
+            margin-bottom: 0;
+        }
+    }
+
+    .legislation-news-item__tags {
+        margin-bottom: 44px;
+
+        @media (min-width: $desktop-width) {
+            margin-bottom: 0;
+        }
+    }
+}

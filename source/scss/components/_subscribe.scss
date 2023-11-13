@@ -1,0 +1,66 @@
+.subscribe {
+    padding-top: 15px;
+}
+
+.subscribe__title {
+    margin: 0;
+    margin-bottom: 18px;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-dark-gray;
+}
+
+.subscribe__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    row-gap: 10px;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width: $desktop-width) {
+        gap: 10px;
+        margin-bottom: 17px;
+    }
+}
+
+.subscribe__item {
+    display: flex;
+    gap: 5px;
+
+    &::after {
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &--digest::after {
+        background-image: url(../img/stack.svg#telegram);
+        background-size: 17px 17px;
+    }
+
+    &--feed::after {
+        background-image: url(../img/stack.svg#telegram);
+        background-size: 17px 17px;
+    }
+
+    &--community::after {
+        background-image: url(../img/stack.svg#vkontakte);
+        background-size: 16px 16px;
+    }
+
+    &--rss::after {
+        background-image: url(../img/stack.svg#link);
+        background-size: 14px 14px;
+    }
+
+    &--newsletter::after {
+        background-image: url(../img/stack.svg#envelope);
+        background-size: 19px 19px;
+    }
+}

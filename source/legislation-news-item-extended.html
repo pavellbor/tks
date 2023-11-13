@@ -13,9 +13,10 @@
             @@include('./partials/_advertisement.html')
             @@include('./partials/_additional-nav.html')
 
-            <article class="legislation-news-item--upd">
+            <article class="legislation-news-item--extended">
                 <header class="legislation-news-item__header">
-                    <nav class="legislation-news-item__nav article-breadcrumb article-breadcrumb--legislation-news-item">
+                    <nav
+                        class="legislation-news-item__nav article-breadcrumb article-breadcrumb--legislation-news-item">
                         <ol class="article-breadcrumb__list">
                             <li class="article-breadcrumb__item">
                                 <a href="#">Главная страница</a>
@@ -37,8 +38,8 @@
                 </div>
                 <a class="legislation-news-item__offer-link" href="#">Предложить свою новость</a>
                 <div class="legislation-news-item__content">
-                    <img class="legislation-news-item__content-image" src="/img/legislation-news-item-chicken.webp" width="270"
-                        height="201" alt="Превью к новости">
+                    <img class="legislation-news-item__content-image" src="/img/legislation-news-item-chicken.webp"
+                        width="270" height="201" alt="Превью к новости">
                     <p>
                         РФ вслед за запретом экспорта некоторых видов мяса птицы может запретить и вывоз за рубеж
                         пищевых яиц на шесть месяцев.
@@ -71,108 +72,62 @@
                         товаров.
                     </p>
                 </div>
-                <div class="legislation-news-item__quote">
-                    <p>
+                <div class="legislation-news-item__quote quote">
+                    <p class="quote__text">
                         Установить, что обеспечение исполнения обязанности по уплате таможенных пошлин, налогов не
                         предоставляется в отношении товаров, предназначенных для строительства
                     </p>
-                    <div class="legislation-news-item__quote-author-wrapper">
+                    <div class="quote__author-wrapper">
                         <img src="/img/legislation-news-item-quote-author.webp" width="40" height="40"
                             alt="Фото автора цитаты">
-                        <div class="legislation-news-item__quote-author">
-                            <span class="text-grey">Автор</span>
+                        <div class="quote__author">
+                            <span>Автор</span>
                             <a href="#">Артур Закондинов</a>
                         </div>
                     </div>
                 </div>
-                <div class="legislation-news-item__latest">
-                    <div class="legislation-news-item__latest-title">
-                        Будьте в курсе последних событий
-                    </div>
-                    <ul class="legislation-news-item__latest-list">
-                        <li class="legislation-news-item__latest-item legislation-news-item__latest-item--digest">
-                            <a href="#">Редакционный дайджест</a>
-                        </li>
-                        <li class="legislation-news-item__latest-item legislation-news-item__latest-item--feed">
-                            <a href="#">Вся лента</a>
-                        </li>
-                        <li class="legislation-news-item__latest-item legislation-news-item__latest-item--community">
-                            <a href="#">Сообщество</a>
-                        </li>
-                        <li class="legislation-news-item__latest-item legislation-news-item__latest-item--rss">
-                            <a href="#">RSS</a>
-                        </li>
-                        <li class="legislation-news-item__latest-item legislation-news-item__latest-item--newsletter">
-                            <a href="#">Рассылка</a>
-                        </li>
-                    </ul>
-                    <div class="legislation-news-item__latest-source legislation-news-item__latest-source--mobile">
-                        <span class="text-grey">Источник </span>ТАСС
-                    </div>
-                    <div class="legislation-news-item__latest-btns">
-                        <a class="legislation-news-item__latest-btn--discuss" href="#">
-                            <span>Обсудить</span>
-                        </a>
-                        <div class="legislation-news-item__latest-btns-control">
-                            <a class="legislation-news-item__latest-btn legislation-news-item__latest-btn--left" href="#"></a>
-                            <a class=" legislation-news-item__latest-btn legislation-news-item__latest-btn--right" href="#"></a>
-                        </div>
+                <div class="legislation-news-item__subscribe subscribe">
+                    @@include('./partials/_subscribe.html')
+                </div>
+
+
+                <div class="legislation-news-item__source legislation-news-item__source--mobile">
+                    <span class="text-grey">Источник </span>ТАСС
+                </div>
+
+                <div class="legislation-news-item__control-btns">
+                    <a class="legislation-news-item__discuss-btn discuss-btn" href="#">
+                        <span>
+                            Обсудить
+                        </span>
+                    </a>
+                    <div class="legislation-news-item__control-btns-wrapper">
+                        <a class="legislation-news-item__control-btn legislation-news-item__control-btn--left control-btn"
+                            href="#"></a>
+                        <a class="legislation-news-item__control-btn control-btn" href="#"></a>
                     </div>
                 </div>
+
                 <div class="legislation-news-item__sources-social-wrapper">
                     <div class="legislation-news-item__sources">
-                        Автор: Христина Критинская
-                        <span class="text-grey">
-                            Источник фото: 
+                        <div class="legislation-news-item__source">Автор: Христина Критинская</div>
+                        <div class="legislation-news-item__source text-grey">
+                            Источник фото:
                             <a href="#">maksim Konstantinov/<br>GlobalLookPress</a>
-                        </span>
-                        <div class="legislation-news-item__latest-source legislation-news-item__latest-source--desktop">
+                        </div>
+                        <div class="legislation-news-item__source legislation-news-item__source--desktop">
                             <span class="text-grey">Источник</span>ТАСС
                         </div>
                     </div>
-                    <div class="legislation-news-item__social">
-                        <a class="legislation-news-item__social--vk" href="#"></a>
-                        <a class="legislation-news-item__social--classmates" href="#"></a>
-                        <a class="legislation-news-item__social--twitter" href="#"></a>
-                        <a class="legislation-news-item__social--chain" href="#"></a>
+                    <div class="legislation-news-item__social social">
+                        @@include('./partials/_social.html')
                     </div>
                 </div>
                 <div class="legislation-news-item__tags">
-                    <div class="legislation-news-item__tags-title text-grey">
-                        Теги:
-                    </div>
-                    <div class="legislation-news-item__tags-links">
-                        <a href="#">Редакционный дайджест</a>
-                        <a href="#">Редакционный дайджест</a>
-                        <a href="#">Редакционный дайджест</a>
-                    </div>
+                    @@include('./partials/_tags.html')
                 </div>
                 <div class="legislation-news-item__reading">
-                    <div class="legislation-news-item__reading-title">
-                        Сейчас читают
-                    </div>
-                    <div class="outer-mobile">
-                        <ul class="legislation-news-item__reading-list swiper inner-mobile">
-                            <li class="legislation-news-item__reading-item">
-                                <time class="legislation-news-item__reading-item-date" datetime="2023-11-10">10.11</time>
-                                <a class="legislation-news-item__reading-item-title">
-                                    Эксперты считают, что экономическая ситуация в России не требует повышения ключевой ставки
-                                </a>
-                            </li>
-                            <li class="legislation-news-item__reading-item">
-                                <time class="legislation-news-item__reading-item-date" datetime="2023-11-10">10.11</time>
-                                <a class="legislation-news-item__reading-item-title">
-                                    О проекте решения Комиссии по лицензионным платежам
-                                </a>
-                            </li>
-                            <li class="legislation-news-item__reading-item">
-                                <time class="legislation-news-item__reading-item-date" datetime="2023-11-10">10.11</time>
-                                <a class="legislation-news-item__reading-item-title">
-                                    Эксперты считают, что экономическая ситуация в России не требует повышения ключевой ставки
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                    @@include('./partials/_just-reading.html')
                 </div>
             </article>
         </main>

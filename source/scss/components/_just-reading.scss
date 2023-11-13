@@ -1,0 +1,40 @@
+.just-reading__title {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.just-reading__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+    margin: 0;
+    margin-bottom: 14px;
+    padding: 0;
+    padding-left: 15px;
+    list-style: none;
+
+    @media (min-width: $desktop-width) {
+        padding-left: 0;
+    }
+}
+
+.just-reading__item {
+    width: 221px;
+}
+
+.just-reading__item-date {
+    font-size: 12px;
+    color: $color-light-gray;
+}
+
+.just-reading__item-title {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.4;
+    color: $color;
+}

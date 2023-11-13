@@ -6,11 +6,9 @@
   color: $color-primary-red;
 }
 
-.legislation-news-item__latest-source {
-  .text-grey {
-    margin-right: 8px;
-    color: $color-light-gray;
-  }
+.text-grey {
+  margin-right: 8px;
+  color: $color-light-gray;
 }
 
 .inner-mobile {
@@ -42,7 +40,7 @@
       display: none;
     }
 
-    > * {
+    >* {
       flex-shrink: 0;
     }
   }
