@@ -29,7 +29,11 @@
 
 .subscribe__item {
     display: flex;
-    gap: 5px;
+    gap: 4px;
+
+    @media (min-width: $desktop-width) {
+        gap: 5px;
+    }
 
     &::after {
         content: '';
